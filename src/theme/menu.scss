@@ -1,0 +1,28 @@
+div.navbar-toggler {
+  border: 0;
+  border-color: transparent;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+
+  &:focus, &:hover {
+    background-color: transparent;
+  }
+
+  button {
+    background: none;
+    border: 0;
+    border-color: transparent;
+  }
+
+  button {
+    cursor: pointer;
+    color: white;
+  }
+
+  div.navbar-github {
+    margin-right: 12px;
+    margin-left: 4px;
+  }
+}

@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "fluster",
+    "package_name": "io.fluster",
+    "sha256_cert_fingerprints":
+    ["C9:20:CC:8B:91:A1:37:83:1F:BA:19:01:DB:3A:99:10:86:50:56:2D:64:92:29:1B:D4:6F:63:4D:C6:BA:EA:80"]
+  }
+}]

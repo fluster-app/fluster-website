@@ -1,0 +1,144 @@
+{
+  "META": {
+    "TITLE": "Roommates next door - Fluster",
+    "DESCRIPTION": "Stai cercando un compagno di stanza o coinquilino? Usa l'applicazione Fluster. Scopri Fluster e trova il compagno di stanza o compagni di stanza dei tuoi sogni, scarica subito l'applicazione gratuita!"
+  },
+  "MENU": {
+    "HIGHLIGHTS": "Highlights",
+    "DISCOVER": "Trova",
+    "PUBLISH": "Pubblica",
+    "DOWNLOAD": "Download",
+    "CONTACT": "Contatti",
+    "SIGN_IN": "Accedi"
+  },
+  "HEADER": {
+    "TITLE": "ROOMMATES NEXT DOOR"
+  },
+  "SELECT_ATTRIBUTES": {
+    "ROOMS": "camere",
+    "ROOM": "camera",
+    "ROOMS_TEXT": "Quante stanze?",
+    "SHARED_ROOMS": "stanze",
+    "SHARED_ROOM": "stanza",
+    "SHARED_ROOMS_TEXT": "Quante stanze in subaffitto?",
+    "FLATMATES": "coinquilini",
+    "FLATMATE": "coinquilino",
+    "FLATMATE_TEXT": "Quante persone vivranno nel tuo appartamento condiviso?",
+    "FLOOR": "Piano",
+    "FLOOR_TEXT": "Quale piano?",
+    "FLOOR_UNDERGROUND": "Sotterraneo",
+    "FLOOR_GROUND_FLOOR": "Piano terra",
+    "BATHROOMS": "bagni",
+    "BATHROOM": "bagno",
+    "BATHROOMS_TEXT": "Quanti bagni?"
+  },
+  "CORE": {
+    "SQUARE_METER": "m2"
+  },
+  "ITEMS": {
+    "AVAILABILITY": {
+      "AVAILABLE_NOW_WITHOUT_END": "disponibile da subito e a tempo indeterminato",
+      "AVAILABLE_NOW_TILL": "disponibile da subito fino a {{formattedDate}}",
+      "AVAILABLE_THE": "disponibile il {{formattedDate}}",
+      "AVAILABLE_FROM": "disponibile da {{formattedDate}}",
+      "AVAILABLE_TILL": "fino a {{formattedDate}}"
+    }
+  },
+  "ITEM_DETAILS": {
+    "CONTENT": {
+      "PRICE_GROSS": "Affitto/mese"
+    }
+  },
+  "TEXT": {
+    "FLAT_TAKEOVER": "Subentro nel mio appartamento ",
+    "FLAT_LIMITED": "Appartamento a tempo determinato ",
+    "SHARE": "Stanza in appartamento condiviso ",
+    "MORE": "Per fissare un appuntamento e scoprire maggiori dettagli, visualizza questo annuncio nella nostra app",
+    "BUTTON": "Apri l'annuncio"
+  },
+  "COMMON": {
+    "SOCIAL": {
+      "DISCOVER": "FLUSTER, roommates next door",
+      "DOWNLOAD": "La nostra app è disponibile per iOS e Android, scaricala",
+      "GET_THE_APP": "Scarica Fluster!"
+    },
+    "ADS": {
+      "VIEWINGS": {
+        "TITLE": "Gestisci le tue visite",
+        "CONTENT": "Fluster organizza il calendario delle tue visite"
+      },
+      "POST": {
+        "TITLE": "Pubblica il tuo annuncio gratuitamente",
+        "CONTENT": "Pubblicità: mai stata così facile"
+      },
+      "FILTER": {
+        "TITLE": "Filtra i candidati",
+        "CONTENT": "Fluster consente di filtrare e selezionare i candidati che ti interessano"
+      },
+      "ALL": {
+        "TITLE": "Tutto-in-uno",
+        "CONTENT": "Annunci, visite, calendario, messaggi, ecc. Fluster ti offre tutti i servizi necessari"
+      },
+      "FIND": {
+        "TITLE": "Trova i tuoi nuovi coinquilini",
+        "CONTENT": "Scopri chi è alla ricerca di un appartamento condiviso come il tuo"
+      }
+    },
+    "BROWSE": {
+      "DISCOVER": {
+        "TITLE": "Trova camere",
+        "CONTENT": "Fluster ti suggerisce la tua nuova casa in base al tuo profilo"
+      },
+      "VIEWINGS": {
+        "TITLE": "Risparmia tempo",
+        "CONTENT": "Ti piace un appartamento su Fluster? Invia all'istante una richiesta per una visita!"
+      },
+      "INTERESTS": {
+        "TITLE": "Lifestyle e hobbys",
+        "CONTENT": "Scopri gli interessi dei tuoi futuri coinquilini"
+      },
+      "FREE": {
+        "TITLE": "Fluster è gratuito",
+        "CONTENT": "Fluster è gratuito per inserzionisti e potenziali candidati"
+      }
+    },
+    "HIGHLIGHTS": {
+      "TITLE": "Le chicche del momento"
+    }
+  },
+  "COOKIE": {
+    "MESSAGE": "Questo sito web usa i cookie per offrire una migliore esperienza di navigazione",
+    "DISMISS": "OK",
+    "LEARN_MORE": "Per saperne di più"
+  },
+  "COMPETITION": {
+    "HEADER": {
+      "TITLE_WIN": "PARTECIPAZIONE A CONCORSI",
+      "TITLE_ACTION": "PUBBLICA IL TUO ANNUNCIO SUBITO"
+    },
+    "TERMS_COMPETITION": "* Condizioni di partecipazione al concorso"
+  },
+  "LOGIN": {
+    "FACEBOOK_LOGIN": "Accedi con Facebook",
+    "GOOGLE_LOGIN": "Accedi con Google",
+    "LEGAL": "Procedendo accetto Termini e Condizioni",
+    "GET_STARTED": "Iniziamo",
+    "GET_THE_APP": "Scarica l'app!"
+  },
+  "FOOTER": {
+    "ABOUT": "Chi siamo"
+  },
+  "SUMMARY": {
+    "CATCHPHRASE": "Fluster, la tua semplice ricerca di coinquilini",
+    "FREE": "Gratuito",
+    "SMART": "Intelligente",
+    "TIMESAVER": "Risparmia tempo",
+    "OPEN_SOURCE": "Open source"
+  },
+  "IMG": {
+    "ALT": {
+      "DEMO_SCREEN": "Fluster Demonstration",
+      "GOOGLE_LOGIN": "Accedi con Google"
+    }
+  }
+}

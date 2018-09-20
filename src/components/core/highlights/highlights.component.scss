@@ -1,0 +1,63 @@
+@import "../../../theme/variables";
+
+app-highlights {
+
+  section {
+    @media(max-width: 768px) {
+      min-height: 214vh;
+    }
+
+    padding-top: 0;
+
+    hr {
+      margin: 0 auto 0;
+    }
+
+    div.album {
+      padding-top: 100px;
+    }
+
+    div.card-top img, div.card-top canvas {
+      width: 100%;
+      max-width: 100%;
+      border-top-left-radius: calc(.25rem - 1px);
+      border-top-right-radius: calc(.25rem - 1px);
+    }
+
+    div.card-body {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 12px;
+      }
+
+      @media(min-width: 768px) {
+        min-height: 16rem;
+      }
+    }
+
+    div.card-top, div.card-body {
+      cursor: pointer;
+    }
+
+    div.card-top {
+      position: relative;
+
+      div.card-img-overlay {
+        padding: 0;
+        transition: background-color 1s;
+      }
+    }
+
+    div.card {
+      &:hover {
+        div.card-img-overlay {
+          background-color: rgba($fluster-peach3, 0.4);
+        }
+      }
+    }
+  }
+}

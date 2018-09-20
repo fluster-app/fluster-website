@@ -1,0 +1,39 @@
+<app-header [fixed]="true" [navigation]="true" [onlyBlog]="true"></app-header>
+
+<section class="features">
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div markdown [src]="post" class="post" (error)="onError($event)"></div>
+
+          <div class="post-not-found" *ngIf="notFound">
+            <div class="d-flex justify-content-center">
+              <fa-icon [icon]="['fal', 'sad-cry']"></fa-icon>
+            </div>
+            <div class="d-flex justify-content-center">
+              <p>Oops, the requested blog post was not found</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <div class="container" *ngIf="!notFound">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline d-flex justify-content-center mt-4">
+          <li class="list-inline-item">
+            <a [href]="sanitize('http://twitter.com/home?status=https://fluster.io/blog/post/' + post)"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
+          </li>
+          <li class="list-inline-item">
+            <a [href]="sanitize('http://www.facebook.com/share.php?u=https://fluster.io/blog/post/' + post)"><fa-icon [icon]="['fab', 'facebook-f']"></fa-icon></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer [home]="true" [social]="false" [language]="false" [copyright]="false"></app-footer>

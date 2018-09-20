@@ -1,0 +1,144 @@
+{
+  "META": {
+    "TITLE": "Roommates next door - Fluster",
+    "DESCRIPTION": "Tu recherches une colocation ou des colocataires? Utilise l'application Fluster. Découvre Fluster et trouve la colocation ou colocataires de tes rêves, télécharge l'application gratuitement dès maintenant!"
+  },
+  "MENU": {
+    "HIGHLIGHTS": "Sélection",
+    "DISCOVER": "Découvrir",
+    "PUBLISH": "Publier",
+    "DOWNLOAD": "Téléchargement",
+    "CONTACT": "Contact",
+    "SIGN_IN": "Connexion"
+  },
+  "HEADER": {
+    "TITLE": "ROOMMATES NEXT DOOR"
+  },
+  "SELECT_ATTRIBUTES": {
+    "ROOMS": "pièces",
+    "ROOM": "pièce",
+    "ROOMS_TEXT": "Combien de pièces?",
+    "SHARED_ROOMS": "chambres en colocation",
+    "SHARED_ROOM": "chambre en colocation",
+    "SHARED_ROOMS_TEXT": "Combien de chambres as-tu à sous-louer?",
+    "FLATMATES": "colocataires",
+    "FLATMATE": "colocataire",
+    "FLATMATE_TEXT": "Combien de personnes vivront-elles dans ta colocation?",
+    "FLOOR": "étage",
+    "FLOOR_TEXT": "À quel étage?",
+    "FLOOR_UNDERGROUND": "Sous-sol",
+    "FLOOR_GROUND_FLOOR": "Rez-de-chaussée",
+    "BATHROOMS": "salles de bains",
+    "BATHROOM": "salle de bains",
+    "BATHROOMS_TEXT": "Combien de salles de bains?"
+  },
+  "CORE": {
+    "SQUARE_METER": "m2"
+  },
+  "ITEMS": {
+    "AVAILABILITY": {
+      "AVAILABLE_NOW_WITHOUT_END": "disponible de suite / durée indéterminée",
+      "AVAILABLE_NOW_TILL": "disponible de suite / jusqu'au {{formattedDate}}",
+      "AVAILABLE_THE": "disponible le {{formattedDate}}",
+      "AVAILABLE_FROM": "disponible du {{formattedDate}}",
+      "AVAILABLE_TILL": "jusqu'au {{formattedDate}}"
+    }
+  },
+  "ITEM_DETAILS": {
+    "CONTENT": {
+      "PRICE_GROSS": "Loyer mensuel"
+    }
+  },
+  "TEXT": {
+    "FLAT_TAKEOVER": "Appartement à reprendre ",
+    "FLAT_LIMITED": "Appartement à durée déterminée ",
+    "SHARE": "Colocation ",
+    "MORE": "Pour contacter l'annonceur et découvrir de plus amples détails, consulte cette annonce dans notre application mobile",
+    "BUTTON": "Ouvrir l'annonce"
+  },
+  "COMMON": {
+    "SOCIAL": {
+      "DISCOVER": "Fluster, roommates next door",
+      "DOWNLOAD": "Notre application est disponible pour iOS et Android, télécharge-la",
+      "GET_THE_APP": "Télécharge Fluster!"
+    },
+    "ADS": {
+      "VIEWINGS": {
+        "TITLE": "Gère tes visites",
+        "CONTENT": "Fluster organise le calendrier de tes visites"
+      },
+      "POST": {
+        "TITLE": "Publie une annonce gratuitement",
+        "CONTENT": "En deux temps trois mouvements, publie ton annonce de coloc"
+      },
+      "FILTER": {
+        "TITLE": "Filtre tes candidats",
+        "CONTENT": "Fluster te permet de filtrer et de sélectionner les candidats qui t'intéressent"
+      },
+      "ALL": {
+        "TITLE": "Tout-en-un",
+        "CONTENT": "Annonces, visites, agenda, messages, notifications, etc. Fluster t'offre tous les services dont tu as besoin"
+      },
+      "FIND": {
+        "TITLE": "Trouve tes nouveaux colocataires",
+        "CONTENT": "Découvre qui recherche une colocation comme la tienne"
+      }
+    },
+    "BROWSE": {
+      "DISCOVER": {
+        "TITLE": "Découvre des colocs",
+        "CONTENT": "Fluster te propose des colocs qui te correspondent"
+      },
+      "VIEWINGS": {
+        "TITLE": "Gagne du temps",
+        "CONTENT": "Tu aimes une annonce sur Fluster ? Envoie instantanément une demande de visite!"
+      },
+      "INTERESTS": {
+        "TITLE": "Style de vie & hobbys",
+        "CONTENT": "Découvre les centres d'intérêt de tes futurs colocs"
+      },
+      "FREE": {
+        "TITLE": "Fluster est gratuit",
+        "CONTENT": "Que tu souhaites publier ou trouver une colocation, Fluster est gratuit"
+      }
+    },
+    "HIGHLIGHTS": {
+      "TITLE": "Nos coups de coeur"
+    }
+  },
+  "COOKIE": {
+    "MESSAGE": "Ce site utilise des cookies pour améliorer votre expérience de navigation et vous offrir un service plus personnalisé",
+    "DISMISS": "Accepter",
+    "LEARN_MORE": "En savoir plus"
+  },
+  "COMPETITION": {
+    "HEADER": {
+      "TITLE_WIN": "PARTICIPE AU CONCOURS",
+      "TITLE_ACTION": "PUBLIE TA COLOC MAINTENANT"
+    },
+    "TERMS_COMPETITION": "* Conditions de participation au concours"
+  },
+  "LOGIN": {
+    "FACEBOOK_LOGIN": "Se connecter avec Facebook",
+    "GOOGLE_LOGIN": "Se connecter avec Google",
+    "LEGAL": "En m'identifiant j'accepte les termes et conditions",
+    "GET_STARTED": "C'est parti",
+    "GET_THE_APP": "Télécharge l'app!"
+  },
+  "FOOTER": {
+    "ABOUT": "À propos"
+  },
+  "SUMMARY": {
+    "CATCHPHRASE": "Fluster, tes colocs à portée de main",
+    "FREE": "Gratuit",
+    "SMART": "Malin",
+    "TIMESAVER": "Gagne-temps",
+    "OPEN_SOURCE": "Open source"
+  },
+  "IMG": {
+    "ALT": {
+      "DEMO_SCREEN": "Fluster démo",
+      "GOOGLE_LOGIN": "Connexion avec Google"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "./theme/variables";
+
+body .cc-revoke, body .cc-window {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+body div.cc-theme-classic a.cc-btn {
+  color: white;
+  font-weight: 300;
+
+  &:hover,
+  &:focus {
+    color: white;
+    background-color: $fluster-peach1;
+  }
+}

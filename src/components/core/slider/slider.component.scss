@@ -1,0 +1,65 @@
+@import "../../../theme/variables";
+
+app-slider {
+
+  div.slider {
+    position: relative;
+
+    div.slider-back, div.slider-next, div.slider-pagination {
+      position: absolute;
+      z-index: 2;
+    }
+
+    div.slider-pagination {
+      bottom: 30px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    div.slider-back, div.slider-next {
+      top: 50%;
+
+      a {
+        opacity: 0.6;
+
+        i {
+          text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+          display: inherit;
+        }
+      }
+    }
+
+    div.slider-back, div.slider-next, div.slider-pagination {
+      a, a:not([href]), a:not([href]):not([tabindex]) {
+        color: $fluster-peach3;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        &:focus, &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    div.slider-back {
+      left: 10px;
+    }
+
+    div.slider-next {
+      right: 10px;
+    }
+
+    // Don't display tab navigation
+    mat-tab-header {
+      &.mat-tab-header {
+        display: none;
+      }
+    }
+
+    mat-tab-body {
+      border-radius: 6px;
+    }
+  }
+}

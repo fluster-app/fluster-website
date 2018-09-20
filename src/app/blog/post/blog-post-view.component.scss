@@ -1,0 +1,30 @@
+@import "../../../theme/blog";
+
+app-blog-post-view {
+
+  img {
+    max-width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .post p:first-of-type {
+    img {
+      width: 40px;
+      margin: 8px;
+    }
+  }
+
+  div.post-not-found {
+    fa-icon {
+      font-size: 14rem;
+    }
+  }
+
+  ul {
+    li {
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+  }
+}

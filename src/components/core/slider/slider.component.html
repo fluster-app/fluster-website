@@ -1,0 +1,32 @@
+<div class="slider" *ngIf="images != null">
+
+  <div class="slider-back" *ngIf="imgIndex >= 1">
+    <a (click)="back()">
+      <fa-icon [icon]="['far', 'chevron-left']" size="3x"></fa-icon>
+    </a>
+  </div>
+
+  <div class="slider-next" *ngIf="imgIndex < images.length - 1">
+    <a (click)="next()">
+      <fa-icon [icon]="['far', 'chevron-right']" size="3x"></fa-icon>
+    </a>
+  </div>
+
+  <div class="slider-pagination">
+    <span *ngFor="let image of images; let i=index;">
+      <a (click)="select(i)">
+        <span *ngIf="i != imgIndex"><fa-icon [icon]="['far', 'circle']"></fa-icon></span>
+        <span *ngIf="i == imgIndex"><fa-icon [icon]="['fas', 'circle']"></fa-icon></span>
+      </a>
+    </span>
+  </div>
+
+  <mat-tab-group [selectedIndex]="imgIndex">
+    <mat-tab *ngFor="let image of images;" (deferLoad)="image.show = true" preRender="false">
+      <ng-container *ngIf="image.show">
+        <img [src]="imgSrc + image.image" style="width:100%;" alt="{{'COMMON.HIGHLIGHTS.TITLE' | translate}}">
+      </ng-container>
+    </mat-tab>
+  </mat-tab-group>
+
+</div>

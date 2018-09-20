@@ -1,0 +1,351 @@
+<app-header [fixed]="true" [navigation]="false"></app-header>
+
+<section class="features competition" *ngIf="getLang() === 'en'">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-left">
+        <div>
+          <p class="text-justify">Terms and conditions for the competition</p>
+
+          <p class="text-muted">1. Object of the conditions of participation and organizer</p>
+
+          <p class="text-justify">
+            These terms and conditions regulate the conditions for participating in the competition. The description and the procedure of the particular competition take place in the context of the relative competition campaign on the Facebook page of Fluster.  Organizer of the competition is Fluster GmbH, Sihlquai 131, 8005 Zurich, Switzerland. By participating in the particular competition, these conditions of participation are accepted.
+          </p>
+
+          <p class="text-justify">
+            The contest has no connection with Facebook and is neither sponsored, supported nor organized by Facebook.
+          </p>
+
+          <p class="text-muted">2. Participation</p>
+
+          <p class="text-justify">
+            Anyone over 18 years of age and resident in Switzerland is eligible to enter the competition. Employees of Fluster GmbH and affiliated companies as well as relatives of such employees and their relatives are excluded. Participation with fake identities or with identities of third parties is not permitted. Eligible participants can participate in the competition by performing both of the following three actions:
+          </p>
+
+          <ol>
+            <li>Download the Fluster application</li>
+          </ol>
+
+          <div class="badges d-flex justify-content-center">
+            <a class="badge-link" aria-label="App Store" href="https://itunes.apple.com/app/id1187266720" onclick="trackOutboundLink('https://itunes.apple.com/app/id1187266720', 'ios', 'outbound_competition_ios'); return false;"><img src="./assets/images/store/app-store-badge-{{getLang()}}.svg" alt="App Store"/></a>
+            <a class="badge-link play-store-link" aria-label="Google Play" href="https://play.google.com/store/apps/details?id=io.fluster.fluster" onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=io.fluster.fluster', 'android', 'outbound_competition_android'); return false;"><img src="./assets/images/store/google-play-badge-{{getLang()}}.png" alt="Google Play"/></a>
+          </div>
+
+          <ol start="2">
+            <li>Advertise a valid room to rent with the Fluster application</li>
+            <li>Like the Facebook page of Fluster (By clicking the Like button)</li>
+          </ol>
+
+          <p class="text-justify">
+            The advertisement of the room to let as well as the evaluation are to be left at least until the selection of the winners. The participation is possible from 28th June 2018 at 8am until 29th July 2018 midnight.
+          </p>
+
+          <p class="text-muted">3. Win and prize notification</p>
+
+          <p class="text-justify">Among all eligible participants we will draw 3 vouchers worth CHF 150 each.</p>
+
+          <p class="text-justify">
+            Winners will be randomly selected from all eligible participants within one week of the closing date. The winners will be notified via Facebook comment feature or in a separate message and asked to send an e-mail to info(at)fluster.io, in which the personal data will be duly and truthfully transmitted. This information is used to send the prize. If we do not receive an e-mail from a winner within the specified period, the winning claim expires. In this case we are entitled to carry out a replacement drawing. Only one prize per participant is possible. The prize is neither transferable nor can the prize be exchanged or paid out in cash. If circumstances arise for which we are not responsible, the respective winner accepts an appropriate replacement prize. Winnings will be sent to the winner by one of our shipping service providers to the address provided.
+          </p>
+
+          <p class="text-muted">4. Responsibility and exemption</p>
+
+          <p class="text-justify">
+            By participating in the competition, participants release Facebook from all liability.
+          </p>
+
+          <p class="text-muted">5. Exclusion</p>
+
+          <p class="text-justify">
+            Violation of these conditions of participation entitles us to exclude the respective participant from participating. This applies in particular if the participant provides false information or photos or other content (e.g. comments) violate applicable law or the rights of third parties. The same applies to comments that can be regarded as glorifying violence, offensive, harassing or degrading or otherwise violate social decency. If the excluded participant is an already drawn winner, the prize may be subsequently withdrawn.
+          </p>
+
+          <p class="text-muted">6. Premature termination and changes</p>
+
+          <p class="text-justify">
+            We reserve the right to end the competition at any time, even without notice, in whole or in part prematurely or to change its course if it is not possible for technical reasons (e.g. computer virus, manipulation of or errors in software/hardware) or legal reasons (e.g. prohibition by Facebook) to guarantee a proper implementation of the competition.
+          </p>
+
+          <p class="text-muted">7. Data privacy</p>
+
+          <p class="text-justify">
+            We are responsible for the collection, processing and use of personal data of participants, provided that we process these ourselves. We will only use the personal data of the participant and his other personal data within the framework of the legal provisions of data protection law. The participant can request information about his personal data stored at any time. In all other respects our data protection declaration applies accordingly, which can be called up under <a (click)="navigateTermsOfUse()">https://fluster.io/termsofuse</a>.
+          </p>
+
+          <p class="text-muted">8. Final clauses</p>
+
+          <p class="text-justify">
+            Should the conditions of participation contain invalid regulations, the validity of the remaining conditions remains unaffected. Swiss law applies. No legal recourse may be taken to review the draw respectively no right of appeal.
+          </p>
+
+          <p class="text-justify">
+            In the in case of disagreement, the German version of these terms and conditions shall prevail.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features competition" *ngIf="getLang() === 'de'">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-left">
+        <div>
+          <p class="text-justify">Gewinnspiel Teilnahmebedingungen</p>
+
+          <p class="text-muted">1. Gegenstand der Teilnahmebedingungen und Veranstalter</p>
+
+          <p class="text-justify">
+            Diese Teilnahmebedingungen regeln die Bedingungen für eine Teilnahme an dem Gewinnspiel. Die Beschreibung und der Ablauf des jeweiligen Gewinnspiels erfolgen im Rahmen der jeweiligen Gewinnspielaktion auf der Facebook-Seite von Fluster.  Veranstalter des Gewinnspiels ist Fluster GmbH, Sihlquai 131, 8005 Zürich, Schweiz. Mit Teilnahme an dem jeweiligen Gewinnspiel werden diese Teilnahmebedingungen angenommen.
+          </p>
+
+          <p class="text-justify">
+            Das Gewinnspiel steht in keiner Verbindung zu Facebook, es wird weder von Facebook gesponsert, unterstützt noch organisiert.
+          </p>
+
+          <p class="text-muted">2. Teilnahme</p>
+
+          <p class="text-justify">
+            Teilnahmeberechtigt am Gewinnspiel sind alle, die das 18. Lebensjahr vollendet und ihren Wohnsitz in der Schweiz haben. Ausgeschlossen sind Mitarbeiter von Fluster GmbH sowie verbundener Unternehmen sowie Angehörige solcher Mitarbeiter und deren Verwandte. Die Teilnahme mit gefälschten Identitäten oder mit Identitäten von Dritten ist nicht erlaubt. Teilnahmeberechtigte können an dem Gewinnspiel teilnehmen, indem sie beide der folgenden zwei Handlungen durchführen:
+          </p>
+
+          <ol>
+            <li>Die Fluster App herunterladen</li>
+          </ol>
+
+          <div class="badges d-flex justify-content-center">
+            <a class="badge-link" aria-label="App Store" href="https://itunes.apple.com/app/id1187266720" onclick="trackOutboundLink('https://itunes.apple.com/app/id1187266720', 'ios', 'outbound_competition_ios'); return false;"><img src="./assets/images/store/app-store-badge-{{getLang()}}.svg" alt="Apple Store"/></a>
+            <a class="badge-link play-store-link" aria-label="Google Play" href="https://play.google.com/store/apps/details?id=io.fluster.fluster" onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=io.fluster.fluster', 'android', 'outbound_competition_android'); return false;"><img src="./assets/images/store/google-play-badge-{{getLang()}}.png" alt="Google Play"/></a>
+          </div>
+
+          <ol start="2">
+            <li>Ein gültiges WG-Zimmer mittels die Applikation Fluster inserieren</li>
+            <li>Die Facebook-Seite von Fluster liken (Gefällt mir-Button klicken)</li>
+          </ol>
+
+          <p class="text-justify">
+            Das Inserat des WG-Zimmer sowie die Bewertung sind mindestens bis zur Auswahl der Gewinner zu belassen. Die Teilnahme ist ab dem 28. Juni 2018 um 08.00 Uhr bis zum 29. Juli 2018 um Mitternacht möglich.
+          </p>
+
+          <p class="text-muted">3. Gewinne und Gewinnbenachrichtigung</p>
+
+          <p class="text-justify">Unter allen teilnahmeberechtigten Teilnehmern verlosen wir 3 Gutscheine im Wert von je CHF 150.</p>
+
+          <p class="text-justify">
+            Die Gewinner werden innerhalb einer Woche nach Teilnahmeschluss unter allen teilnahmeberechtigten Teilnehmern per Zufallsprinzip ermittelt. Die Gewinner werden per Facebook-Kommentar-Funktion oder in einem gesonderten Posting benachrichtigt und aufgefordert, eine E-Mail an info(at)fluster.io zu senden, in der die persönlichen Daten ordnungs- und wahrheitsgemäss vollständig übermittelt werden. Diese Angaben dienen der Übersendung des Gewinns. Geht von einem Gewinner innerhalb der angegebenen Frist keine E-Mail bei uns ein, erlischt der Gewinnanspruch. Wir sind in diesem Fall berechtigt, eine Ersatzauslosung durchzuführen. Je Teilnehmer ist nur ein Gewinn möglich. Der Gewinn ist weder übertragbar, noch kann der Gewinn getauscht oder in bar ausgezahlt werden. Sofern Umstände eintreten, die wir nicht zu vertreten haben, akzeptiert der jeweilige Gewinner einen angemessenen Ersatzgewinn. Die Gewinne werden dem Gewinner per mit einem unserer Versanddienstleister an die angegebene Anschrift gesendet.
+          </p>
+
+          <p class="text-muted">4. Haftung und Freistellung</p>
+
+          <p class="text-justify">
+            Mit der Teilnahme am Gewinnspiel stellt der Teilnehmer Facebook von jeder Haftung frei.
+          </p>
+
+          <p class="text-muted">5. Ausschluss</p>
+
+          <p class="text-justify">
+            Ein Verstoss gegen diese Teilnahmebedingungen berechtigt uns, den jeweiligen Teilnehmer von der Teilnahme auszuschliessen. Dies gilt insbesondere, wenn der Teilnehmer falsche Angaben macht oder verwendete Fotos oder andere Inhalte (z.B. Kommentare) geltendes Recht oder Rechte Dritter verletzen. Gleiches gilt bei Kommentaren, die als gewaltverherrlichend, anstössig, belästigend oder herabwürdigend angesehen werden können oder in sonstiger Weise gegen das gesellschaftliche Anstandsgefühl verstossen. Handelt es sich bei dem ausgeschlossenen Teilnehmer um einen bereits ausgelosten Gewinner, kann der Gewinn nachträglich aberkannt werden.
+          </p>
+
+          <p class="text-muted">6. Vorzeitige Beendigung sowie Änderungen</p>
+
+          <p class="text-justify">
+            Wir behalten uns das Recht vor, das Gewinnspiel jederzeit, auch ohne Einhaltung von Fristen, ganz oder teilweise vorzeitig zu beenden oder in seinem Verlauf abzuändern, wenn es aus technischen (z.B. Computervirus, Manipulation von oder Fehler in Software/Hardware) oder rechtlichen Gründen (z.B. Untersagung durch Facebook) nicht möglich ist, eine ordnungsgemässe Durchführung des Gewinnspiels zu garantieren.
+          </p>
+
+          <p class="text-muted">7. Datenschutz</p>
+
+          <p class="text-justify">
+            Wir sind verantwortlich für die Erhebung, Verarbeitung und Nutzung von personenbezogenen Daten der Teilnehmer, sofern wir diese selbst verarbeiten. Wir werden die Angaben zur Person des Teilnehmers sowie seine sonstigen personenbezogenen Daten nur im Rahmen der gesetzlichen Bestimmungen des Datenschutzrechtes verwenden. Der Teilnehmer kann jederzeit Auskunft über die zu seiner Person gespeicherten Daten verlangen. Im Übrigen gilt unsere Datenschutzerklärung entsprechend, die unter <a (click)="navigateTermsOfUse()">https://fluster.io/termsofuse</a> abrufbar ist.
+          </p>
+
+          <p class="text-muted">8. Schlussbestimmungen</p>
+
+          <p class="text-justify">
+            Sollten die Teilnahmebedingungen unwirksame Regelungen enthalten, bleibt die Wirksamkeit der Bedingungen im Übrigen unberührt. Es gilt Schweizer Recht. Ein Rechtsweg zur Überprüfung der Auslosung ist ausgeschlossen.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features competition" *ngIf="getLang() === 'fr'">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-left">
+        <div>
+          <p class="text-justify">Conditions de participation au concours</p>
+
+          <p class="text-muted">1. Sujet des conditions de participation et organisateur</p>
+
+          <p class="text-justify">
+            Les présentes conditions générales régissent les conditions de participation au concours. La description et la procédure du concours ont lieu dans le contexte de l'action du concours publié sur la page Facebook de Fluster.  L'organisateur du concours est Fluster GmbH, Sihlquai 131, 8005 Zurich, Suisse. En participant à ce concours, les conditions de participation sont acceptées.
+          </p>
+
+          <p class="text-justify">
+            Le concours n'a aucun lien avec Facebook, il n'est ni sponsorisé, ni soutenu, ni organisé par Facebook.
+          </p>
+
+          <p class="text-muted">2. Participation</p>
+
+          <p class="text-justify">
+            Toute personne âgée de plus de 18 ans et résidant en Suisse peut participer au concours. Sont exclus les employés de Fluster GmbH et des sociétés affiliées ainsi que leurs proches. La participation avec de fausses identités ou des identités de tiers n'est pas autorisée. Les participants admissibles peuvent participer au concours en exécutant les trois actions suivantes :
+          </p>
+
+          <ol>
+            <li>Télécharger l'application Fluster</li>
+          </ol>
+
+          <div class="badges d-flex justify-content-center">
+            <a class="badge-link" aria-label="App Store" href="https://itunes.apple.com/app/id1187266720" onclick="trackOutboundLink('https://itunes.apple.com/app/id1187266720', 'ios', 'outbound_competition_ios'); return false;"><img src="./assets/images/store/app-store-badge-{{getLang()}}.svg" alt="App Store"/></a>
+            <a class="badge-link play-store-link" aria-label="Google Play" href="https://play.google.com/store/apps/details?id=io.fluster.fluster" onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=io.fluster.fluster', 'android', 'outbound_competition_android'); return false;"><img src="./assets/images/store/google-play-badge-{{getLang()}}.png" alt="Google Play"/></a>
+          </div>
+
+          <ol start="2">
+            <li>Annoncer une colocation valide avec l'application Fluster</li>
+            <li>Liker la page Facebook de Fluster (en cliquant sur le bouton "j'aime")</li>
+          </ol>
+
+          <p class="text-justify">
+            L'annonce de la chambre en colocation ainsi que l'évaluation (= "like") ne doivent pas être supprimés au moins jusqu'à la sélection des gagnants. La participation est possible du 28 juin 2018 à 8h jusqu'au 29 juillet 2018 minuit.
+          </p>
+
+          <p class="text-muted">3. Gagnants et avis de gain</p>
+
+          <p class="text-justify">Parmi tous les participants éligibles, nous tirerons 3 bons d'une valeur de CHF 150 chacun.</p>
+
+          <p class="text-justify">
+            Les gagnants seront choisis au hasard parmi tous les participants éligibles dans la semaine suivant la date de clôture. Les gagnants seront informés via la fonction de commentaire Facebook ou dans un message séparé et seront priés d'envoyer un e-mail à info(at)fluster.io dans laquelle les données personnelles seront dûment et fidèlement transmises dans leur intégralité. Ces informations seront utilisées pour envoyer le prix. Si nous ne recevons pas d'e-mail de la part d'un gagnant dans le délai spécifié, la réclamation gagnante expire. Dans ce cas, nous sommes en droit d'effectuer un tirage au sort de remplacement. Un seul prix par participant est possible. Le prix n'est pas transférable et ne peut être échangé ou payé en espèces. Si des circonstances dont nous ne sommes pas responsables se produisent, le gagnant accepte un prix de remplacement approprié. Les gains seront envoyés au gagnant par l'un de nos fournisseurs de services d'expédition à l'adresse fournie.
+          </p>
+
+          <p class="text-muted">4. Responsabilité et exemption</p>
+
+          <p class="text-justify">
+            En participant au concours, les participants dégagent Facebook de toute responsabilité.
+          </p>
+
+          <p class="text-muted">5. Exclusion</p>
+
+          <p class="text-justify">
+            La violation de ces conditions de participation nous autorise à exclure les participants respectifs de la participation. Ceci s'applique en particulier si le participants fournissent de fausses informations ou des photos ou d'autres contenus (par exemple des commentaires) violant la loi en vigueur ou les droits de tiers. Il en va de même pour les commentaires qui peuvent être considérés comme glorifiant la violence, offensant, harcelant ou dégradant ou qui violent la décence sociale. Si les participants exclus sont des gagnants déjà tiré au sort, les prix pourront être retirés au sort par la suite.
+          </p>
+
+          <p class="text-muted">6. Résiliation anticipée et changements</p>
+
+          <p class="text-justify">
+            Nous nous réservons le droit de mettre fin au concours en tout temps ou de modifier son déroulement à tout moment, même sans respecter les délais, s'il n'est pas possible pour des raisons techniques (p.ex. virus informatique, manipulation ou erreurs dans le logiciel/matériel) ou légales (p.ex. interdiction par Facebook) de garantir une bonne exécution du concours.
+          </p>
+
+          <p class="text-muted">7. Confidentialité des données</p>
+
+          <p class="text-justify">
+            Nous sommes responsables de la collecte, du traitement et de l'utilisation des données personnelles des participants, à condition que nous les traitions nous-mêmes. Nous n'utiliserons les données personnelles du participant et ses autres données personnelles que dans le cadre des dispositions légales de la loi sur la protection des données. Le participant peut à tout moment demander des informations sur ses données personnelles stockées. Pour le reste, notre déclaration de protection des données s'applique en conséquence, qui peut être appelée sous <a (click)="navigateTermsOfUse()">https://fluster.io/termsofuse</a>.
+          </p>
+
+          <p class="text-muted">8. Clauses finales</p>
+
+          <p class="text-justify">
+            Si les conditions de participation contiennent des dispositions invalides, la validité des autres conditions n'en est pas affectée. Le droit suisse est applicable. Aucun recours juridique ne peut être exercé.
+          </p>
+
+          <p class="text-justify">
+            En cas de litige, la version allemande des présentes conditions est déterminante.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features competition" *ngIf="getLang() === 'it'">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-left">
+        <div>
+          <p class="text-justify">Condizioni di partecipazione al concorso</p>
+
+          <p class="text-muted">1. Oggetto delle Condizioni di partecipazione e dell'Organizzatore</p>
+
+          <p class="text-justify">
+            I presenti termini e condizioni disciplinano le condizioni di partecipazione al concorso. La descrizione e la procedura del rispettivo concorso si svolgono nel contesto della rispettiva azione sul concorso sulla pagina Facebook di Fluster.  Organizzatore del concorso è Fluster GmbH, Sihlquai 131, 8005 Zurigo, Svizzera. Partecipando al rispettivo concorso, si accettano le presenti condizioni di partecipazione.
+          </p>
+
+          <p class="text-justify">
+            Il concorso non ha alcun collegamento con Facebook, non è sponsorizzato, supportato o organizzato da Facebook.
+          </p>
+
+          <p class="text-muted">2. Partecipazione</p>
+
+          <p class="text-justify">
+            Possono partecipare al concorso le persone di età superiore ai 18 anni residenti in Svizzera. Sono esclusi i dipendenti di Fluster GmbH e delle società affiliate, nonché i loro familiari. Non è consentita la partecipazione con identità contraffatte o di terzi. I partecipanti ammissibili possono partecipare al concorso eseguendo entrambe le seguenti azioni:
+          </p>
+
+          <ol>
+            <li>Scarica l'app Fluster</li>
+          </ol>
+
+          <div class="badges d-flex justify-content-center">
+            <a class="badge-link" aria-label="App Store" href="https://itunes.apple.com/app/id1187266720" onclick="trackOutboundLink('https://itunes.apple.com/app/id1187266720', 'ios', 'outbound_competition_ios'); return false;"><img src="./assets/images/store/app-store-badge-{{getLang()}}.svg" alt="App Store"/></a>
+            <a class="badge-link play-store-link" aria-label="Google Play" href="https://play.google.com/store/apps/details?id=io.fluster.fluster" onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=io.fluster.fluster', 'android', 'outbound_competition_android'); return false;"><img src="./assets/images/store/google-play-badge-{{getLang()}}.png" alt="Google Play"/></a>
+          </div>
+
+          <ol start="2">
+            <li>Pubblicizzare una stanza valida per appartamenti in comune utilizzando l'applicazione Fluster</li>
+            <li>Like la pagina Facebook</li>
+          </ol>
+
+          <p class="text-justify">
+            L'annuncio della stanza da condividere e la valutazione (= "like") non devono essere cancellati almeno fino a quando i vincitori non sono stati selezionati. La partecipazione è possibile dal 28 giugno 2018 alle 8:00 fino al 29 luglio 2018 mezzanotte.
+          </p>
+
+          <p class="text-muted">3. Notifica di vincita e vincente</p>
+
+          <p class="text-justify">Di tutti i partecipanti ammissibili, preleveremo 3 buoni del valore di CHF 150.- cadauno.</p>
+
+          <p class="text-justify">
+            I vincitori saranno selezionati a caso tra tutti i partecipanti ammissibili entro una settimana dalla data di chiusura. I vincitori saranno avvisati tramite la funzione di commento di Facebook o con una pubblicazione separata e invitati ad inviare una e-mail a info(at)fluster.io in cui i dati personali saranno debitamente e sinceramente trasmessi in tutte le loro parti. Queste informazioni vengono utilizzate per l'invio del premio. Se non riceviamo un'e-mail da un vincitore entro il termine specificato, il reclamo vincente scade. In questo caso siamo autorizzati ad eseguire un disegno sostitutivo. È possibile un solo premio per partecipante. Il premio non è trasferibile, né può essere scambiato o pagato in contanti. In caso di circostanze per le quali non siamo responsabili, il rispettivo vincitore accetta un premio sostitutivo adeguato. Le vincite saranno inviate al vincitore da uno dei nostri fornitori di servizi di spedizione all'indirizzo fornito.
+          </p>
+
+          <p class="text-muted">4. Responsabilità e esonero</p>
+
+          <p class="text-justify">
+            Partecipando al concorso, i partecipanti sollevano Facebook da ogni responsabilità.
+          </p>
+
+          <p class="text-muted">5. Esclusione</p>
+
+          <p class="text-justify">
+            La violazione delle presenti condizioni di partecipazione ci autorizza ad escludere dalla partecipazione il rispettivo partecipante. Ciò vale in particolare se il partecipante fornisce informazioni o foto false o altri contenuti (ad es. commenti) che violano la legge applicabile o i diritti di terzi. Lo stesso vale per i commenti che possono essere considerati come esaltazione della violenza, offensiva, molestia o degradante o altrimenti violazione del buon costume sociale. Se il partecipante escluso è un vincitore già estratto, il premio può essere successivamente ritirato.
+          </p>
+
+          <p class="text-muted">6. Terminazione anticipata e modifiche</p>
+
+          <p class="text-justify">
+            Ci riserviamo il diritto di interrompere il concorso in tutto o in parte anticipatamente o di modificarne lo svolgimento in qualsiasi momento, anche senza rispettare le scadenze, qualora non sia possibile garantire la corretta esecuzione del concorso per motivi tecnici (ad es. virus informatici, manipolazione o errori nel software/hardware) o legali (ad es. divieto da parte di Facebook).
+          </p>
+
+          <p class="text-muted">7. Protezione dei dati</p>
+
+          <p class="text-justify">
+            Siamo responsabili per la raccolta, l'elaborazione e l'utilizzo dei dati personali dei partecipanti, a condizione che vengano elaborati da noi stessi. Utilizzeremo i dati personali del partecipante e gli altri suoi dati personali solo nell'ambito delle disposizioni legali della legge sulla protezione dei dati. Il partecipante può richiedere in qualsiasi momento informazioni sui propri dati personali memorizzati. Per tutti gli altri aspetti vale la nostra dichiarazione sulla protezione dei dati, che può essere richiamata in <a (cliccare) ="navigateTermsOfUse()">https://fluster.io/termsofuse</a>.
+          </p>
+
+          <p class="text-muted">8. Clausole finali</p>
+
+          <p class="text-justify">
+            Se le condizioni di partecipazione contengono disposizioni non valide, la validità delle restanti condizioni rimane invariata. Si applica il diritto svizzero. Il sorteggio non può essere oggetto di ricorso giurisdizionale.
+          </p>
+
+          <p class="text-justify">
+            In caso di disaccordo, prevarrà la versione tedesca delle presenti condizioni.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer [home]="true" [social]="false" [copyright]="true"></app-footer>

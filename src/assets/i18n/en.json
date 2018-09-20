@@ -1,0 +1,144 @@
+{
+  "META": {
+    "TITLE": "Roommates next door - Fluster",
+    "DESCRIPTION": "Are you looking for rooms to let or roommates? Uses the Fluster application. Discover Fluster and find the rooms to rent or roommates of your dreams, download the free application now!"
+  },
+  "MENU": {
+    "HIGHLIGHTS": "Highlights",
+    "DISCOVER": "Discover",
+    "PUBLISH": "Publish",
+    "DOWNLOAD": "Download",
+    "CONTACT": "Contact",
+    "SIGN_IN": "Sign in"
+  },
+  "HEADER": {
+    "TITLE": "ROOMMATES NEXT DOOR"
+  },
+  "SELECT_ATTRIBUTES": {
+    "ROOMS": "bedrooms",
+    "ROOM": "bedroom",
+    "ROOMS_TEXT": "How many rooms?",
+    "SHARED_ROOMS": "bedrooms",
+    "SHARED_ROOM": "bedroom",
+    "SHARED_ROOMS_TEXT": "How many rooms to sublease?",
+    "FLATMATES": "roommates",
+    "FLATMATE": "roommate",
+    "FLATMATE_TEXT": "How many persons will live in your shared flat?",
+    "FLOOR": "floor",
+    "FLOOR_TEXT": "On what floor?",
+    "FLOOR_UNDERGROUND": "Basement",
+    "FLOOR_GROUND_FLOOR": "GF",
+    "BATHROOMS": "bathrooms/toilets",
+    "BATHROOM": "bathroom/toilet",
+    "BATHROOMS_TEXT": "How many bathrooms?"
+  },
+  "CORE": {
+    "SQUARE_METER": "m2"
+  },
+  "ITEMS": {
+    "AVAILABILITY": {
+      "AVAILABLE_NOW_WITHOUT_END": "as of now and forever",
+      "AVAILABLE_NOW_TILL": "as of now until {{formattedDate}}",
+      "AVAILABLE_THE": "available as of {{formattedDate}}",
+      "AVAILABLE_FROM": "available as of {{formattedDate}}",
+      "AVAILABLE_TILL": "until {{formattedDate}}"
+    }
+  },
+  "ITEM_DETAILS": {
+    "CONTENT": {
+      "PRICE_GROSS": "Rental fee/month"
+    }
+  },
+  "TEXT": {
+    "FLAT_TAKEOVER": "Flat takeover ",
+    "FLAT_LIMITED": "Flat for temporary lease ",
+    "SHARE": "Shared flat ",
+    "MORE": "To send a viewing request and to discover more details, view this opportunity in our mobile app",
+    "BUTTON": "Open ad"
+  },
+  "COMMON": {
+    "SOCIAL": {
+      "DISCOVER": "Fluster, roommates next door",
+      "DOWNLOAD": "Our app is available for iOS and Android, download it now",
+      "GET_THE_APP": "Get the Fluster app!"
+    },
+    "ADS": {
+      "VIEWINGS": {
+        "TITLE": "Manage your viewings",
+        "CONTENT": "Fluster take care of the calendar of your viewings"
+      },
+      "POST": {
+        "TITLE": "Advertise your room to let for free",
+        "CONTENT": "Publishing an ad has never been easier"
+      },
+      "FILTER": {
+        "TITLE": "Filter your candidates",
+        "CONTENT": "Fluster allows you to filter and select candidates that match your interests"
+      },
+      "ALL": {
+        "TITLE": "One-stop shop",
+        "CONTENT": "Rooms, viewings, agenda, messages, notifications, etc. Fluster offers you all the services you need"
+      },
+      "FIND": {
+        "TITLE": "Find your new roommate",
+        "CONTENT": "Discover who is looking for a shared flat like yours"
+      }
+    },
+    "BROWSE": {
+      "DISCOVER": {
+        "TITLE": "Discover rooms to let",
+        "CONTENT": "Fluster recommends you rooms to let fitting your needs"
+      },
+      "VIEWINGS": {
+        "TITLE": "Save time",
+        "CONTENT": "You like a place on Fluster? Send an instant viewing requests!"
+      },
+      "INTERESTS": {
+        "TITLE": "Lifestyle & hobbies",
+        "CONTENT": "Discover what are the interests of your future roommates"
+      },
+      "FREE": {
+        "TITLE": "Fluster is for free",
+        "CONTENT": "Wether you are an advertiser or looking for a new place, Fluster is for free"
+      }
+    },
+    "HIGHLIGHTS": {
+      "TITLE": "Recent highlights"
+    }
+  },
+  "COOKIE": {
+    "MESSAGE": "This website uses cookies to ensure you get the best experience on our website",
+    "DISMISS": "Got it!",
+    "LEARN_MORE": "Learn more"
+  },
+  "COMPETITION": {
+    "HEADER": {
+      "TITLE_WIN": "ENTER THE CONTEST NOW",
+      "TITLE_ACTION": "ADVERTISE YOUR FLATSHARE"
+    },
+    "TERMS_COMPETITION": "* Terms and conditions for the competition"
+  },
+  "LOGIN": {
+    "FACEBOOK_LOGIN": "Sign in with Facebook",
+    "GOOGLE_LOGIN": "Sign in with Google",
+    "LEGAL": "By entering I accept the Terms & Conditions",
+    "GET_STARTED": "Get started",
+    "GET_THE_APP": "Get the app!"
+  },
+  "FOOTER": {
+    "ABOUT": "About"
+  },
+  "SUMMARY": {
+    "CATCHPHRASE": "Fluster, your simple search for roommates",
+    "FREE": "Free",
+    "SMART": "Smart",
+    "TIMESAVER": "Timesaver",
+    "OPEN_SOURCE": "Open source"
+  },
+  "IMG": {
+    "ALT": {
+      "DEMO_SCREEN": "Fluster demo",
+      "GOOGLE_LOGIN": "Sign in with Google"
+    }
+  }
+}

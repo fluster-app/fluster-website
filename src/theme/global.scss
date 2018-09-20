@@ -1,0 +1,534 @@
+// Global Components
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: $my-font-family;
+}
+
+a, a:not([href]), a:not([href]):not([tabindex]) {
+  @include transition-all();
+  text-decoration: none;
+  &:not(.menu-item) {
+    color: $fluster-peach1;
+  }
+
+  &:hover,
+  &:focus {
+    color: darken($fluster-peach1, 10%);
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+hr {
+  max-width: 100px;
+  margin: 25px auto 0;
+  border-width: 1px;
+  border-color: rgba($gray-darker, 0.1);
+
+  &.light {
+    border-color: white;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font();
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+// Navigation
+
+
+.navbar {
+  @include heading-font();
+  z-index: 1;
+
+  .navbar-toggler {
+    button {
+      cursor: pointer;
+      color: white;
+    }
+  }
+
+  .navbar-brand {
+    @include heading-font();
+    min-height: 40px;
+
+    a {
+      display: none;
+    }
+
+    a,
+    a:hover,
+    a:focus,
+    a:not([href]),
+    a:not([href]):hover,
+    a:not([href]):focus {
+      color: $fluster-peach3;
+    }
+  }
+
+  &:not(.main-navbar-fix) {
+    div.navbar-brand.navbrand-not-fixed, div.navbar-github {
+      a {
+        display: initial;
+        color: white;
+      }
+    }
+  }
+
+  &.main-navbar-fix {
+    background-color: white;
+    border-color: rgba($gray-darker, 0.05);
+    @include transition-all();
+    z-index: 1;
+
+    .navbar-brand {
+      a {
+        display: initial;
+      }
+    }
+
+    .navbar-toggler {
+      button, a {
+        color: $fluster-dark-blue;
+      }
+    }
+  }
+
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+
+    a.navbar-sign-in {
+      margin-right: 12px;
+      color: white;
+    }
+  }
+
+  &.main-navbar-fix {
+    .navbar-actions {
+      a.navbar-sign-in {
+        color: inherit;
+      }
+    }
+  }
+
+}
+
+// Homepage Header
+
+header {
+  position: relative;
+  width: 100%;
+  overflow-y: hidden;
+  @include fluster-linear-gradient(to bottom right, $fluster-peach1, $fluster-peach3);
+  color: white;
+
+  &.competition {
+    background-image: url("/assets/images/fluster-win-1200x800.jpg");
+    @include background-cover();
+  }
+
+  .header-content {
+    text-align: center;
+    padding: 125px 0 50px;
+    position: relative;
+    .header-content-inner {
+      position: relative;
+      max-width: 500px;
+      margin: 0 auto;
+      h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-size: 60px;
+      }
+      h3 {
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-size: 1.5rem;
+
+        a {
+          color: inherit;
+
+          &:focus, &:hover {
+            color: inherit;
+          }
+        }
+      }
+      .list-badges {
+        margin-bottom: 25px;
+        img {
+          height: 50px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+
+    @media(min-width: 992px) {
+      padding-left: 50px;
+    }
+  }
+  .device-container {
+    max-width: 300px;
+    margin: 0 auto 100px;
+    .screen img {
+      border-radius: 3px;
+    }
+  }
+  @media (min-width: 576px) {
+    min-height: 100%;
+    .header-content {
+      text-align: left;
+      height: 100vh;
+      .header-content-inner {
+        max-width: none;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .device-container {
+      margin: 100px auto 0;
+    }
+  }
+
+  .header-down-arrow {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 12px;
+
+    a {
+      color: white;
+      font-size: 2rem;
+      font-weight: 300;
+    }
+  }
+}
+
+// Sections
+
+section {
+  padding: 100px 0;
+
+  h2 {
+    font-size: 38px;
+  }
+
+  &.summary {
+    h2 {
+      margin-bottom: 16px;
+      color: inherit;
+    }
+
+    @media (max-width: 480px) {
+      p {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (min-width: 480px) and (max-width: 992px) {
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    span.separator {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+}
+
+
+section.download, header, section.competition {
+  .badges {
+    .badge-link {
+      display: block;
+      margin-bottom: 25px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      img {
+        height: 60px;
+      }
+      @media(min-width: 768px) {
+        display: inline-block;
+        margin-bottom: 10px;
+
+        &:first-child {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+section.download, section.summary {
+  @media(min-width: 768px) {
+    div.row > div {
+      // col-md-offset-2 buggy right now
+      margin-left: 16.666667%
+    }
+  }
+
+  a:not([href]) {
+    color: inherit;
+
+    &:focus, &:hover {
+      color: inherit;
+    }
+
+    &.terms-competition {
+      font-size: 60%;
+    }
+  }
+}
+
+section.download {
+  h2, p {
+    color: white;
+  }
+}
+
+section#about, section#contact-social {
+  a, a:not([href]), a:not([href]):not([tabindex]) {
+    color: inherit;
+    font-weight: 300;
+
+    fa-icon {
+      color: white;
+    }
+  }
+}
+
+section#features-publish {
+  background-color: $fluster-midnight-blue;
+
+  h3, p {
+    color: white;
+  }
+}
+
+section.features {
+  .section-heading {
+    h2 {
+      margin-top: 0;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    margin-bottom: 100px;
+  }
+  .device-container,
+  .feature-item {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .device-container {
+    margin-bottom: 100px;
+    @media(min-width: 992px) {
+      margin-bottom: 0;
+    }
+  }
+  .feature-item {
+    text-align: center;
+    margin-bottom: 100px;
+    h3 {
+      font-size: 24px;
+    }
+    svg {
+      height: 6rem;
+      width: 6rem;
+      color: $fluster-peach3;
+
+      &[data-icon="users"] {
+        width: 8rem;
+      }
+
+      &[data-icon="pencil"], &[data-icon="filter"] {
+        width: 5rem;
+      }
+    }
+  }
+  @media(min-width: 992px) {
+    .device-container,
+    .feature-item {
+      max-width: none;
+    }
+
+    .device-container.device-container-fix {
+      max-width: 300px;
+    }
+  }
+  @media(max-width: 992px) {
+    padding-bottom: 20px;
+  }
+  padding-bottom: 60px;
+}
+
+section.contact {
+  text-align: center;
+  padding-bottom: 75px;
+
+  .container-languages {
+    padding-top: 60px;
+  }
+
+  h3 a {
+    color: $fluster-peach1;
+    border-color: $fluster-peach1;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    svg {
+      color: $fluster-peach3;
+    }
+  }
+  ul.list-social {
+    margin-bottom: 0;
+    li {
+      a {
+        display: block;
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        font-size: 30px;
+        border-radius: 100%;
+        color: white;
+      }
+      &.social-twitter {
+        a {
+          background-color: $brand-twitter;
+          &:hover {
+            background-color: darken($brand-twitter, 5%);
+          }
+        }
+      }
+      &.social-facebook {
+        a {
+          background-color: $brand-facebook;
+          &:hover {
+            background-color: darken($brand-facebook, 5%);
+          }
+        }
+      }
+      &.social-google-plus {
+        a {
+          background-color: $brand-google-plus;
+          &:hover {
+            background-color: darken($brand-google-plus, 5%);
+          }
+        }
+      }
+      &.social-instagram {
+        a {
+          background-color: $brand-instagram;
+          &:hover {
+            background-color: darken($brand-instagram, 5%);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Bootstrap Overrides
+
+.bg-primary {
+  @include fluster-linear-gradient(to bottom, $fluster-peach1, darken($fluster-peach1, 5%));
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+// Button Styles
+.btn-outline {
+  color: white;
+  border-color: white;
+  border: 1px solid;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: white;
+    background-color: $fluster-peach3;
+    border-color: $fluster-peach3;
+  }
+}
+
+.btn {
+  @include alt-font();
+  border-radius: 300px;
+}
+
+.btn-xl {
+  padding: 15px 45px;
+  font-size: 11px;
+}
+
+// Extras
+// -- Highlight Color Customization
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: $gray-darker;
+}
+
+::selection {
+  color: white;
+  text-shadow: none;
+  background: $gray-darker;
+}
+
+img::selection {
+  color: white;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: white;
+  background: transparent;
+}
+
+app-footer {
+  .social-fluster-email {
+    a {
+      background-color: $fluster-peach2;
+    }
+  }
+
+  footer {
+    padding-bottom: 16px;
+
+    small {
+      font-size: 60%;
+      font-weight: 300;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@import "../../../theme/variables";
+@import "../../../theme/mixin";
+
+.cdk-overlay-backdrop.loginBackdrop {
+  @include fluster-linear-gradient(to bottom right, $fluster-peach1, $fluster-peach3);
+}
+
+.cdk-overlay-pane.loginPanel {
+  mat-dialog-container {
+    border-radius: 8px;
+  }
+}
+
+app-login-dialog {
+  div[mat-dialog-actions] {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 50px;
+
+    a.badge-link {
+      img {
+        height: 2.4rem;
+      }
+
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  h1[mat-dialog-title] {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font: inherit;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  div[mat-dialog-content] {
+
+    button {
+      border: 0;
+      background-image: none;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      padding: 8px;
+      border-radius: 4px;
+      margin: 8px;
+      font-weight: 300;
+      height: 40px;
+      width: 15rem;
+
+      svg {
+        padding-right: 2px;
+      }
+
+      &.facebook {
+        background-color: $facebook;
+        color: white;
+      }
+
+      &.google {
+        background-color: white;
+
+        img {
+          width: 12px;
+          vertical-align: inherit;
+        }
+      }
+    }
+
+    a.legal {
+      color: inherit;
+      font-size: 0.6em;
+      font-weight: 300;
+    }
+  }
+
+  div.close-dialog {
+    a {
+      svg {
+        color: lighten($gray-base, 85.5%);
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

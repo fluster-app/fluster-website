@@ -1,0 +1,58 @@
+@import "../../theme/variables";
+@import "../../theme/mixin";
+
+section#item {
+  padding-top: 80px;
+  padding-bottom: 70px;
+
+  @media(min-width: 992px) {
+    div.row {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  div.row {
+    div {
+      p {
+        margin-bottom: 2px;
+      }
+
+      &.badges {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  #store-section {
+    padding-top: 24px;
+
+    a {
+      border-radius: 8px;
+      font-size: 1rem;
+      color: white;
+      border-color: $fluster-peach3;
+      background-color: $fluster-peach3;
+    }
+  }
+
+  #text-more {
+    padding-top: 32px;
+  }
+
+  @media (max-width: 992px) {
+    #item-details {
+      padding-top: 40px;
+
+      div.badges {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+section#item-map {
+  padding-top: 0;
+  padding-bottom: 75px;
+}

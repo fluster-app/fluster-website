@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://fluster.io/</loc>
+    <lastmod>2018-06-18T11:15:00+00:00</lastmod>
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://fluster.io/?lang=de"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="https://fluster.io/?lang=fr"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://fluster.io/?lang=it"
+    />
+  </url>
+
+  <url>
+    <loc>https://fluster.io/index_de.html</loc>
+    <lastmod>2018-06-18T11:35:15+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://fluster.io/index_fr.html</loc>
+    <lastmod>2018-06-18T11:35:15+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://fluster.io/index_it.html</loc>
+    <lastmod>2018-06-18T11:35:15+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://fluster.io/de/index.html</loc>
+    <lastmod>2018-06-18T11:15:15+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://fluster.io/fr/index.html</loc>
+    <lastmod>2018-06-18T11:15:15+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://fluster.io/it/index.html</loc>
+    <lastmod>2018-06-18T11:15:15+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://fluster.io/termsofuse</loc>
+    <lastmod>2018-06-18T11:35:15+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://fluster.io/?lang=de</loc>
+    <lastmod>2018-06-18T11:15:00+00:00</lastmod>
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://fluster.io/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="https://fluster.io/?lang=fr"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://fluster.io/?lang=it"
+    />
+  </url>
+
+  <url>
+    <loc>https://fluster.io/?lang=fr</loc>
+    <lastmod>2018-06-18T11:15:00+00:00</lastmod>
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://fluster.io/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://fluster.io/?lang=de"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://fluster.io/?lang=it"
+    />
+  </url>
+
+  <url>
+    <loc>https://fluster.io/?lang=it</loc>
+    <lastmod>2018-06-18T11:15:00+00:00</lastmod>
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://fluster.io/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="de"
+      href="https://fluster.io/?lang=de"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="https://fluster.io/?lang=fr"
+    />
+  </url>
+
+</urlset>

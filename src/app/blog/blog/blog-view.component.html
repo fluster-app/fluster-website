@@ -1,0 +1,28 @@
+<app-header [showNotFixedNavBrand]="true" [navigation]="true" [onlyBlog]="true"></app-header>
+
+<!-- Page Header -->
+<header class="masthead">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>The Fluster Blog</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<div class="container blog-summary">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+
+      <div markdown [src]="'./assets/blog/blog.md'" class="post"></div>
+
+    </div>
+  </div>
+</div>
+
+<app-footer [home]="true" [language]="false" [social]="false" [copyright]="false"></app-footer>

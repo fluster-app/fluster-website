@@ -1,0 +1,54 @@
+@import "../../../theme/variables";
+@import "../../../theme/mixin";
+
+.cdk-overlay-backdrop.menuBackdrop {
+  background: white;
+}
+
+.cdk-overlay-pane.menuPanel {
+  mat-dialog-container {
+    box-shadow: none;
+    border: none;
+  }
+}
+
+app-menu-dialog {
+
+  div[mat-dialog-content] {
+    a {
+      font-size: 200%;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 4px;
+      text-decoration: none;
+      font-weight: 300;
+      display: inherit;
+      color: inherit;
+
+      -webkit-transition: none;
+      -moz-transition: none;
+      transition: none;
+
+      &.menu-item-ellipsis {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      &.menu-item-github {
+        padding-top: 4rem;
+        font-size: 100%;
+      }
+
+      &:hover, &:active, &:focus, &:visited {
+        background-color: transparent;
+        border-color: transparent;
+        color: $fluster-peach1;
+      }
+
+      div {
+        background-color: transparent;
+        border-color: transparent;
+      }
+    }
+  }
+}

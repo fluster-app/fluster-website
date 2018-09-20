@@ -1,0 +1,13 @@
+<div mat-dialog-content class="text-center">
+
+  <a class="menu-item" (click)="navigateHome()">FLUSTER</a>
+  <a class="menu-item" href="/?#highlights" *ngIf="highlights && !onlyBlog">{{'MENU.HIGHLIGHTS'| translate}}</a>
+  <a class="menu-item" href="/?#features-publish" *ngIf="!onlyBlog">{{'MENU.PUBLISH'| translate}}</a>
+  <a class="menu-item" href="/?#features-browse" *ngIf="!onlyBlog">{{'MENU.DISCOVER'| translate}}</a>
+  <a class="menu-item menu-item-ellipsis" href="/?#download" *ngIf="!onlyBlog">{{'MENU.DOWNLOAD'| translate}}</a>
+  <a class="menu-item" href="/?#contact-social" *ngIf="!onlyBlog">{{'MENU.CONTACT'| translate}}</a>
+  <a class="menu-item" (click)="navigateBlog()">Blog</a>
+  <a class="menu-item menu-item-github" href="https://github.com/fluster/">Fork me on GitHub <fa-icon [icon]="['fab', 'github']"></fa-icon></a>
+
+</div>
+

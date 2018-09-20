@@ -1,0 +1,28 @@
+<div class="close-dialog text-right">
+  <a (click)="onNoClick()"><fa-icon [icon]="['far', 'times-circle']"></fa-icon></a>
+</div>
+
+<h1 mat-dialog-title class="text-center">{{'LOGIN.GET_STARTED'| translate}}</h1>
+
+<div mat-dialog-content class="text-center">
+
+  <button mat-button class="facebook" (click)="facebookLogin()">
+    <fa-icon [icon]="['fab', 'facebook']"></fa-icon> {{'LOGIN.FACEBOOK_LOGIN'| translate}}
+  </button>
+
+  <button mat-button class="google" (click)="googleLogin()">
+    <img src="assets/icons/ico_google-login.svg" alt="{{'IMG.ALT.GOOGLE_LOGIN' | translate}}"/> {{'LOGIN.GOOGLE_LOGIN'| translate}}
+  </button>
+
+  <div>
+    <a class="legal" (click)="navigateTermsOfUse()">{{'LOGIN.LEGAL'| translate}}</a>
+  </div>
+
+</div>
+
+<h1 mat-dialog-title class="text-center mt-4">{{'LOGIN.GET_THE_APP'| translate}}</h1>
+
+<div mat-dialog-actions>
+  <a class="badge-link" aria-label="App Store" href="https://itunes.apple.com/app/id1187266720" onclick="trackOutboundLink('https://itunes.apple.com/app/id1187266720', 'ios', 'outbound_login_ios'); return false;"><img src="./assets/images/store/app-store-badge-{{getLang()}}.svg" alt="App Store"/></a>
+  <a class="badge-link play-store-link" aria-label="Google Play" href="https://play.google.com/store/apps/details?id=io.fluster.fluster" onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=io.fluster.fluster', 'android', 'outbound_login_android'); return false;"><img src="./assets/images/store/google-play-badge-{{getLang()}}.png" alt="Google Play"/></a>
+</div>

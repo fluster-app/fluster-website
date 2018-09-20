@@ -1,0 +1,175 @@
+<app-header [highlights]="highlights"></app-header>
+
+<header id="page-top" [class.competition]="RESOURCES.COMPETITION">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="header-content">
+          <div class="header-content-inner">
+            <h1>FLUSTER</h1>
+            <h3 *ngIf="!RESOURCES.COMPETITION">{{'HEADER.TITLE' | translate}}</h3>
+
+            <div *ngIf="RESOURCES.COMPETITION">
+              <h3>{{'COMPETITION.HEADER.TITLE_WIN' | translate}}<br/>{{'COMPETITION.HEADER.TITLE_ACTION' | translate}}<a href="#download">*</a></h3>
+            </div>
+
+            <div class="badges">
+              <a class="badge-link" aria-label="App Store" href="https://itunes.apple.com/app/id1187266720" onclick="trackOutboundLink('https://itunes.apple.com/app/id1187266720', 'ios', 'outbound_home_ios'); return false;"><img src="./assets/images/store/app-store-badge-{{getLang()}}.svg" alt="App Store"/></a>
+              <a class="badge-link play-store-link" href="https://play.google.com/store/apps/details?id=io.fluster.fluster" onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=io.fluster.fluster', 'android', 'outbound_home_android'); return false;"><img src="./assets/images/store/google-play-badge-{{getLang()}}.png" alt="Google Play"/></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="device-container">
+          <div class="device-mockup iphone6_plus portrait white">
+            <div class="device">
+              <div class="screen">
+                <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                <img src="./assets/images/demo-screen/{{demoScreens[0].imgName}}-{{getLang()}}.png" class="img-fluid" alt="{{'IMG.ALT.DEMO_SCREEN' | translate}}"/>
+              </div>
+              <div class="button">
+                <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-none d-sm-block header-down-arrow">
+    <div class="text-center">
+      <a href="#features-publish"><fa-icon [icon]="['fal', 'chevron-down']" aria-hidden="true"></fa-icon></a>
+    </div>
+  </div>
+</header>
+
+<section id="summary" class="summary text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2 class="section-heading">{{'SUMMARY.CATCHPHRASE' | translate}}</h2>
+        <p>{{'SUMMARY.FREE' | translate}} <fa-icon [icon]="['fal', 'gift']"></fa-icon><span class="separator">|</span>{{'SUMMARY.SMART' | translate}} <fa-icon [icon]="['fal', 'lightbulb-on']"></fa-icon><span class="separator">|</span>{{'SUMMARY.TIMESAVER' | translate}} <fa-icon [icon]="['fal', 'hourglass-end']"></fa-icon><span class="separator">|</span>{{'SUMMARY.OPEN_SOURCE' | translate}} <fa-icon [icon]="['fab', 'osi']" aria-hidden="true"></fa-icon></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-highlights (notifyHighlights)="highlightsLoaded($event)"></app-highlights>
+
+<section id="features-publish" class="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="feature-item">
+                <fa-icon [icon]="['fas', 'users']"></fa-icon>
+                <h3>{{'COMMON.ADS.FIND.TITLE' | translate}}</h3>
+                <p>{{'COMMON.ADS.FIND.CONTENT' | translate}}</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-item">
+                <fa-icon [icon]="['fas', 'pencil']"></fa-icon>
+                <h3>{{'COMMON.ADS.POST.TITLE' | translate}}</h3>
+                <p>{{'COMMON.ADS.POST.CONTENT' | translate}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="feature-item">
+                <fa-icon [icon]="['fas', 'filter']"></fa-icon>
+                <h3>{{'COMMON.ADS.FILTER.TITLE' | translate}}</h3>
+                <p>{{'COMMON.ADS.FILTER.CONTENT' | translate}}</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-item">
+                <fa-icon [icon]="['far', 'calendar-check']"></fa-icon>
+                <h3>{{'COMMON.ADS.VIEWINGS.TITLE' | translate}}</h3>
+                <p>{{'COMMON.ADS.VIEWINGS.CONTENT' | translate}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="device-container device-container-fix">
+          <div class="device-mockup iphone6_plus portrait white">
+            <div class="device">
+              <div class="screen" (deferLoad)="loadDemoScreenOne()">
+                <ng-container *ngIf="demoScreens[1].show">
+                  <img src="./assets/images/demo-screen/{{demoScreens[1].imgName}}-{{getLang()}}.png" class="img-fluid" alt="{{'COMMON.ADS.FIND.TITLE' | translate}}"/>
+                </ng-container>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features-browse" class="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="feature-item">
+                <fa-icon [icon]="['far', 'search']"></fa-icon>
+                <h3>{{'COMMON.BROWSE.DISCOVER.TITLE' | translate}}</h3>
+                <p class="text-muted">{{'COMMON.BROWSE.DISCOVER.CONTENT' | translate}}</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-item">
+                <fa-icon [icon]="['far', 'paper-plane']"></fa-icon>
+                <h3>{{'COMMON.BROWSE.VIEWINGS.TITLE' | translate}}</h3>
+                <p class="text-muted">{{'COMMON.BROWSE.VIEWINGS.CONTENT' | translate}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="feature-item">
+                <fa-icon [icon]="['far', 'heart']"></fa-icon>
+                <h3>{{'COMMON.BROWSE.INTERESTS.TITLE' | translate}}</h3>
+                <p class="text-muted">{{'COMMON.BROWSE.INTERESTS.CONTENT' | translate}}</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-item">
+                <fa-icon [icon]="['far', 'gift']"></fa-icon>
+                <h3>{{'COMMON.BROWSE.FREE.TITLE' | translate}}</h3>
+                <p class="text-muted">{{'COMMON.BROWSE.FREE.CONTENT' | translate}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="device-container device-container-fix">
+          <div class="device-mockup iphone6_plus portrait white">
+            <div class="device">
+              <div class="screen" (deferLoad)="loadDemoScreenTwo()">
+                <ng-container *ngIf="demoScreens[2].show">
+                  <img src="./assets/images/demo-screen/{{demoScreens[2].imgName}}-{{getLang()}}.png" class="img-fluid" alt="{{'COMMON.BROWSE.INTERESTS.CONTENT' | translate}}"/>
+                </ng-container>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-download [displayCompetitionLink]="true"></app-download>
+
+<app-footer [about]="true"></app-footer>

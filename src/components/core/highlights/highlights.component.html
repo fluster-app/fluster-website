@@ -1,0 +1,31 @@
+<section *ngIf="items == null || hasItems()" id="highlights">
+  <hr/>
+  <div class="album py-5">
+    <div class="container">
+
+      <div class="row" *ngIf="hasItems()">
+
+        <div class="col-md-12">
+          <h2 class="text-center mb-4">{{'COMMON.HIGHLIGHTS.TITLE'| translate}}</h2>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-xl-4 mb-4 d-md-block d-xl-block" *ngFor="let item of items;"
+             (click)="navigate(item)" (deferLoad)="item.showImage = true" [preRender]="false">
+          <div class="card box-shadow">
+            <div class="card-top">
+              <div class="card-img-overlay"></div>
+
+              <ng-container *ngIf="item.showImage">
+                <img [src]="RESOURCES.AWS.S3_URL + '/' + item.source + '/' + item.hashId + '/' + item.mainPhoto" alt="{{'COMMON.HIGHLIGHTS.TITLE' | translate}}">
+              </ng-container>
+            </div>
+            <div class="card-body">
+              <app-item-summary [item]="item"></app-item-summary>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

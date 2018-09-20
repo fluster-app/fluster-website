@@ -1,0 +1,43 @@
+{
+  "index": "/index.html",
+  "assetGroups": [{
+    "name": "app",
+    "installMode": "prefetch",
+    "resources": {
+      "files": [
+        "/favicon.ico",
+        "/index.html",
+        "/*.css",
+        "/*.js"
+      ]
+    }
+  }, {
+    "name": "assets",
+    "installMode": "lazy",
+    "updateMode": "prefetch",
+    "resources": {
+      "files": [
+        "/assets/**",
+        "/images/**",
+        "/*.png",
+        "/*.svg",
+        "index_de.html",
+        "index_fr.html",
+        "index_it.html",
+        "fr/index.html",
+        "de/index.html",
+        "it/index.html",
+        "termsofuse.html",
+        "termsofuse_de.html",
+        "termsofuse_fr.html",
+        "termsofuse_it.html",
+        "google54c09397947f86ba.html",
+        "browserconfig.xml"
+      ],
+      "urls": [
+        "https://fonts.googleapis.com/icon?family=Material+Icons"
+      ]
+    }
+  }],
+  "navigationUrls": ["!/admin/**/*"]
+}

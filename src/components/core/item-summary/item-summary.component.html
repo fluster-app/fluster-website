@@ -1,0 +1,64 @@
+<div *ngIf="item != null">
+  <!-- Item shared rooms -->
+  <div class="row" *ngIf="isItemShare()">
+    <div class="col-md-12">
+      <h1>
+        <span *ngIf="item.attributes.sharedRooms > 1">{{item.attributes.sharedRooms}} {{'SELECT_ATTRIBUTES.SHARED_ROOMS'| translate}}</span>
+        <span *ngIf="item.attributes.sharedRooms == 1">{{item.attributes.sharedRooms}} {{'SELECT_ATTRIBUTES.SHARED_ROOM'| translate}}</span>
+      </h1>
+    </div>
+  </div>
+
+  <!-- Item rooms -->
+  <div class="row" *ngIf="isItemFlat()">
+    <div class="col-md-12">
+      <h1>
+        <span *ngIf="item.attributes.rooms > 1">{{item.attributes.rooms}} {{'SELECT_ATTRIBUTES.ROOMS'| translate}}</span>
+        <span *ngIf="item.attributes.rooms == 1">{{item.attributes.rooms}} {{'SELECT_ATTRIBUTES.ROOM'| translate}}</span>
+        <span *ngIf="item.attributes.size > 0">{{item.attributes.size}} {{'CORE.SQUARE_METER'| translate}}</span>
+      </h1>
+    </div>
+  </div>
+
+  <!-- Availability -->
+  <div class="row" *ngIf="item.attributes.availability != null">
+    <div class="col-md-12">
+      <p>
+        <span *ngIf="isItemShare()">{{'TEXT.SHARE'| translate}}</span>
+
+        <span *ngIf="isItemFlat() && !hasEndAvailability()">{{'TEXT.FLAT_TAKEOVER'| translate}}</span>
+
+        <span *ngIf="isItemFlat() && hasEndAvailability()">{{'TEXT.FLAT_LIMITED'| translate}}</span>
+
+        <span *ngIf="isAvailableNow() && !hasEndAvailability()">
+            {{'ITEMS.AVAILABILITY.AVAILABLE_NOW_WITHOUT_END'| translate}}
+        </span>
+        <span *ngIf="isAvailableNow() && hasEndAvailability()">
+            {{'ITEMS.AVAILABILITY.AVAILABLE_NOW_TILL' | translate:{formattedDate: getFormattedDate(item.attributes.availability.end)} }}
+        </span>
+        <span *ngIf="!isAvailableNow() && !hasEndAvailability()">
+            {{'ITEMS.AVAILABILITY.AVAILABLE_THE'| translate:{formattedDate: getFormattedDate(item.attributes.availability.begin)} }}
+        </span>
+        <span *ngIf="!isAvailableNow() && hasEndAvailability()">
+            {{'ITEMS.AVAILABILITY.AVAILABLE_FROM'| translate:{formattedDate: getFormattedDate(item.attributes.availability.begin)} }} {{'ITEMS.AVAILABILITY.AVAILABLE_TILL' | translate:{formattedDate: getFormattedDate(item.attributes.availability.end)} }}
+        </span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Price -->
+  <div class="row">
+    <div class="col-md-12">
+      <p>
+        {{'ITEM_DETAILS.CONTENT.PRICE_GROSS'| translate}} {{price | async}}
+      </p>
+    </div>
+  </div>
+
+  <!-- Location -->
+  <div class="row">
+    <div class="col-md-12">
+      <p><span *ngIf="item.address.district != null">{{item.address.district}}, </span>{{item.address.city}}</p>
+    </div>
+  </div>
+</div>

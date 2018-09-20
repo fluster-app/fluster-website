@@ -1,0 +1,21 @@
+<nav appRootTagLang id="mainNav" class="navbar justify-content-between fixed-top" [class.main-navbar-fix]="scrolled || fixed">
+  <div class="container">
+    <div class="navbar-brand" [class.navbrand-not-fixed]="showNotFixedNavBrand">
+      <a (click)="navigateHome()">FLUSTER</a>
+    </div>
+
+    <div class="navbar-actions" *ngIf="navigation">
+      <a class="navbar-sign-in" (click)="openLoginDialog()">{{'MENU.SIGN_IN'| translate}}</a>
+
+      <div class="navbar-toggler">
+        <div class="navbar-github">
+          <a aria-label="GitHub" href="https://github.com/fluster/"><fa-icon [icon]="['fab', 'github']"></fa-icon></a>
+        </div>
+
+        <button mat-icon-button (click)="openMenuDialog()">
+          <i class="material-icons">menu</i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

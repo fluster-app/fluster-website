@@ -1,0 +1,45 @@
+<app-header [fixed]="true" [navigation]="true"></app-header>
+
+<section id="item" class="features" *ngIf="item != null">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <app-slider [images]="itemImages" [imgSrc]="RESOURCES.AWS.S3_URL + '/' + item.source + '/' + item.hashId + '/'"></app-slider>
+      </div>
+
+      <div class="col-md-6" id="item-details">
+
+        <app-item-summary (notifyPrice)="updateMetaDescription($event)" [item]="item"></app-item-summary>
+
+        <div class="row" id="text-more">
+          <div class="col-md-12">
+            <p>{{'TEXT.MORE'| translate}}</p>
+          </div>
+        </div>
+
+        <div class="row" id="store-section">
+          <div class="col-md-12">
+            <div class="badges">
+              <a [href]="sanitize('https://fluster.app.link/item?$itemId=' + item.hashId)" class="btn btn-xl">{{'TEXT.BUTTON'| translate}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="item-map">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <app-google-map [item]="item"></app-google-map>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-download></app-download>
+
+<app-footer [home]="true"></app-footer>

@@ -1,0 +1,22 @@
+<section id="download" class="download bg-primary text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2 class="section-heading">{{'COMMON.SOCIAL.GET_THE_APP'| translate}}</h2>
+        <p>{{'COMMON.SOCIAL.DOWNLOAD'| translate}}</p>
+        <div class="badges">
+          <a class="badge-link" aria-label="App Store" href="https://itunes.apple.com/app/id1187266720" onclick="trackOutboundLink('https://itunes.apple.com/app/id1187266720', 'ios', 'outbound_download_ios'); return false;"><img src="./assets/images/store/app-store-badge-{{getLang()}}.svg" alt="App Store"/></a>
+          <a class="badge-link play-store-link" aria-label="Google Play" href="https://play.google.com/store/apps/details?id=io.fluster.fluster" onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=io.fluster.fluster', 'android', 'outbound_download_android'); return false;"><img src="./assets/images/store/google-play-badge-{{getLang()}}.png" alt="Google Play"/></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5" *ngIf="RESOURCES.COMPETITION && displayCompetitionLink">
+      <div class="col-md-8">
+        <p>
+          <a (click)="navigateCompetition()" class="terms-competition">{{'COMPETITION.TERMS_COMPETITION'| translate}}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

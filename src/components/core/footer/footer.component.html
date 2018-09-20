@@ -1,0 +1,55 @@
+<section id="contact-social" class="contact" *ngIf="social || language">
+  <div class="container" *ngIf="social">
+    <h2>We <fa-icon [icon]="['fas', 'heart']"></fa-icon> new friends!</h2>
+    <ul class="list-inline list-social">
+      <li class="list-inline-item social-facebook">
+        <a aria-label="Facebook" href="https://www.facebook.com/flusterapp/"><fa-icon [icon]="['fab', 'facebook-f']"></fa-icon></a>
+      </li>
+      <li class="list-inline-item social-instagram">
+        <a aria-label="Instagram" href="https://instagram.com/fluster.io/"><fa-icon [icon]="['fab', 'instagram']"></fa-icon></a>
+      </li>
+      <li class="list-inline-item social-twitter">
+        <a aria-label="Twitter" href="https://www.twitter.com/flusterapp/"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
+      </li>
+      <li class="list-inline-item social-fluster-email">
+        <a aria-label="Email" href="mailto:&#105;&#110;&#102;&#111;&#064;&#102;&#108;&#117;&#115;&#116;&#101;&#114;&#046;&#105;&#111;"><fa-icon [icon]="['far', 'envelope']"></fa-icon></a>
+      </li>
+    </ul>
+  </div>
+  <div class="container text-center container-languages" *ngIf="language">
+    <ul  class="list-inline">
+      <li *ngIf="getLang() != 'de'" class="list-inline-item">
+        <a (click)="switchLang('de')">Deutsch</a>
+      </li>
+      <li *ngIf="getLang() != 'en'" class="list-inline-item">
+        <a (click)="switchLang('en')">English</a>
+      </li>
+      <li *ngIf="getLang() != 'fr'" class="list-inline-item">
+        <a (click)="switchLang('fr')">Français</a>
+      </li>
+      <li *ngIf="getLang() != 'it'" class="list-inline-item">
+        <a (click)="switchLang('it')">Italiano</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<ng-container *ngIf="about">
+  <hr/>
+
+  <section id="about" class="text-center">
+    <div class="container">
+      <h2>{{"FOOTER.ABOUT" | translate}}</h2>
+      <p><a href="/blog">Blog</a> | <a href="https://github.com/fluster">GitHub</a> | <a href="https://twitter.com/daviddalbusco">Team</a></p>
+    </div>
+  </section>
+</ng-container>
+
+<footer>
+  <div class="container text-center" *ngIf="!copyright">
+    <small>Fluster is developed with passion in Zürich🇨🇭</small>
+  </div>
+  <div class="container text-center" *ngIf="copyright">
+    <small>Copyright &copy; 2018 Fluster, David Dal Busco. All Rights Reserved.</small>
+  </div>
+</footer>

@@ -1,0 +1,24 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/ororo
+permissions:
+  - object: /var/www/ororo
+    pattern: "*"
+    owner: nginx
+    group: www-data
+    mode: 755
+hooks:
+  AfterInstall:
+    - location: installmodules.sh
+      timeout: 60
+      runas: root
+  ApplicationStart:
+    - location: startnode.sh
+      timeout: 60
+      runas: root
+  ApplicationStop:
+    - location: stopnode.sh
+      timeout: 60
+      runas: root

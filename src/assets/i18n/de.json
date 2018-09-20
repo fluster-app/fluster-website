@@ -1,0 +1,144 @@
+{
+  "META": {
+    "TITLE": "Roommates next door - Fluster",
+    "DESCRIPTION": "WG-Zimmer gesucht oder zu vergeben? Mit der Fluster-App finden. Entdecke Fluster & finde die perfekte WG und Mitbewohner, jetzt gratis App downloaden - unkompliziert & schnell!"
+  },
+  "MENU": {
+    "HIGHLIGHTS": "Highlights",
+    "DISCOVER": "Entdecken",
+    "PUBLISH": "Inserieren",
+    "DOWNLOAD": "Download",
+    "CONTACT": "Kontakt",
+    "SIGN_IN": "Anmelden"
+  },
+  "HEADER": {
+    "TITLE": "ROOMMATES NEXT DOOR"
+  },
+  "SELECT_ATTRIBUTES": {
+    "ROOMS": "Zimmer",
+    "ROOM": "Zimmer",
+    "ROOMS_TEXT": "Wie viele Zimmer?",
+    "SHARED_ROOMS": "WG-Zimmer",
+    "SHARED_ROOM": "WG-Zimmer",
+    "SHARED_ROOMS_TEXT": "Wie viele Zimmer bietest du zur Untermiete an?",
+    "FLATMATES": "Mitbewohner",
+    "FLATMATE": "Mitbewohner",
+    "FLATMATE_TEXT": "Wie viele Personen werden in deiner WG leben?",
+    "FLOOR": "Etage",
+    "FLOOR_TEXT": "Auf welcher Etage?",
+    "FLOOR_UNDERGROUND": "UG",
+    "FLOOR_GROUND_FLOOR": "EG",
+    "BATHROOMS": "Badezimmer",
+    "BATHROOM": "Badezimmer",
+    "BATHROOMS_TEXT": "Wie viele Badezimmer?"
+  },
+  "CORE": {
+    "SQUARE_METER": "m2"
+  },
+  "ITEMS": {
+    "AVAILABILITY": {
+      "AVAILABLE_NOW_WITHOUT_END": "ab sofort und unbefristet verfügbar",
+      "AVAILABLE_NOW_TILL": "ab sofort verfügbar bis {{formattedDate}}",
+      "AVAILABLE_THE": "verfügbar ab {{formattedDate}}",
+      "AVAILABLE_FROM": "verfügbar von {{formattedDate}}",
+      "AVAILABLE_TILL": "bis {{formattedDate}}"
+    }
+  },
+  "ITEM_DETAILS": {
+    "CONTENT": {
+      "PRICE_GROSS": "Miete/Monat"
+    }
+  },
+  "TEXT": {
+    "FLAT_TAKEOVER": "Wohnung zu übernehmen ",
+    "FLAT_LIMITED": "Wohnen auf Zeit ",
+    "SHARE": "WG-Zimmer ",
+    "MORE": "Um einen Besichtigungstermin zu vereinbaren und mehr Details zu entdecken, öffne dieses Gesuch in unserer App",
+    "BUTTON": "Gesuch öffnen"
+  },
+  "COMMON": {
+    "SOCIAL": {
+      "DISCOVER": "Fluster, roommates next door",
+      "DOWNLOAD": "Unsere App gibt es für iOS und Andoid – lade sie gleich herunter",
+      "GET_THE_APP": "Hol dir die Fluster App!"
+    },
+    "ADS": {
+      "VIEWINGS": {
+        "TITLE": "Terminverwaltung",
+        "CONTENT": "Fluster organisiert deine Besichtigungstermine"
+      },
+      "POST": {
+        "TITLE": "Inseriere dein WG-Zimmer gratis",
+        "CONTENT": "Erstelle dein Gesuch in nur wenigen Schritten"
+      },
+      "FILTER": {
+        "TITLE": "Bewerber filtern",
+        "CONTENT": "Mit Fluster kannst du deine Bewerber filtern und noch einfacher aussuchen"
+      },
+      "ALL": {
+        "TITLE": "Eine App für alles",
+        "CONTENT": "Gesuche, Besichtigungen, Termine, Nachrichten, usw. – Fluster bietet dir alles, was du brauchst"
+      },
+      "FIND": {
+        "TITLE": "Entdecke deine neuen Mitbewohner",
+        "CONTENT": "Entdecke Menschen, die eine WG wie deine wollen"
+      }
+    },
+    "BROWSE": {
+      "DISCOVER": {
+        "TITLE": "Entdecke WG-Zimmer",
+        "CONTENT": "Fluster schlägt dir auf dein Profil zugeschnittene WG-Zimmer vor"
+      },
+      "VIEWINGS": {
+        "TITLE": "Spare Zeit",
+        "CONTENT": "Dir gefällt ein WG-Zimmer auf Fluster? Sende gleich eine Besichtigungsanfrage!"
+      },
+      "INTERESTS": {
+        "TITLE": "Lifestyle & Hobbys",
+        "CONTENT": "Entdecke welche sind die Interessen deiner zukünftigen Mitbewohner"
+      },
+      "FREE": {
+        "TITLE": "Fluster ist gratis",
+        "CONTENT": "Ob Inserent oder Bewerber – Fluster ist gratis"
+      }
+    },
+    "HIGHLIGHTS": {
+      "TITLE": "Aktuelle Highlights"
+    }
+  },
+  "COOKIE": {
+    "MESSAGE": "Diese Webseite benutzt Cookies um Ihnen ein optimales Erlebnis auf unserer Webseite zu ermöglichen",
+    "DISMISS": "OK",
+    "LEARN_MORE": "Mehr Informationen"
+  },
+  "COMPETITION": {
+    "HEADER": {
+      "TITLE_WIN": "INSERIERE JETZT DEINE WG",
+      "TITLE_ACTION": "NIMM AM GEWINNSPIEL TEIL"
+    },
+    "TERMS_COMPETITION": "* Gewinnspiel Teilnahmebedingungen"
+  },
+  "LOGIN": {
+    "FACEBOOK_LOGIN": "Mit Facebook anmelden",
+    "GOOGLE_LOGIN": "Mit Google anmelden",
+    "LEGAL": "Mit meiner Anmeldung akzeptiere ich die Geschäftsbedingungen",
+    "GET_STARTED": "Leg los",
+    "GET_THE_APP": "Hol dir die App!"
+  },
+  "FOOTER": {
+    "ABOUT": "Über uns"
+  },
+  "SUMMARY": {
+    "CATCHPHRASE": "Fluster, deine einfache Suche nach Mitbewohnern",
+    "FREE": "Gratis",
+    "SMART": "Smart",
+    "TIMESAVER": "Zeitsparend",
+    "OPEN_SOURCE": "Open Source"
+  },
+  "IMG": {
+    "ALT": {
+      "DEMO_SCREEN": "Fluster Demo",
+      "GOOGLE_LOGIN": "Mit Google anmelden"
+    }
+  }
+}
