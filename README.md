@@ -41,7 +41,7 @@ A few of the things Fluster offers:
 * Fluster take care of the calendar of your viewings
 * Fluster is free, open source and even publishing an ad about your room to let is free too
 
-## Server-side rendering (SSE)
+## Server-side rendering (SSR)
 
 This Angular application runs on the server. It follows the architecture of the [Angular Universal starter kit](https://github.com/angular/universal-starter). 
 
