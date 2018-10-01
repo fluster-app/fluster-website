@@ -115,3 +115,20 @@ header.masthead .post-heading .meta a {
 div.blog-summary {
   padding-bottom: 100px;
 }
+
+.post p {
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+  color: $medium-gray;
+}
+
+.post p > a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.post p > a:focus, .post p > a:hover {
+  text-decoration: underline;
+  color: $fluster-peach1;
+}

@@ -21,10 +21,44 @@ app-blog-post-view {
     }
   }
 
-  ul {
+  ul, ol {
     li {
       font-weight: 300;
       margin-bottom: 10px;
+      font-size: 18px;
     }
   }
+
+  pre {
+    background: rgba(0, 0, 0, .05);
+    padding: 16px;
+
+    code {
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+
+  code {
+    font-weight: 300;
+    color: inherit;
+  }
+
+  .post p:first-of-type {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+    color: $medium-gray;
+  }
+
+  .post p:first-of-type > a {
+    text-decoration: none;
+    color: #212529;
+  }
+
+  .post p:first-of-type > a:focus, .post p:first-of-type > a:hover {
+    text-decoration: underline;
+    color: $fluster-peach1;
+  }
+
 }

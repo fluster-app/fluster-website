@@ -20,23 +20,6 @@
   margin: 0 0 10px;
 }
 
-.post p:first-of-type {
-  font-size: 18px;
-  font-style: italic;
-  margin-top: 0;
-  color: $medium-gray;
-}
-
-.post p:first-of-type > a {
-  text-decoration: none;
-  color: #212529;
-}
-
-.post p:first-of-type > a:focus, .post p:first-of-type > a:hover {
-  text-decoration: underline;
-  color: $fluster-peach1;
-}
-
 @media only screen and (min-width: 768px) {
   .post h2 {
     font-size: 36px;
