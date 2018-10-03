@@ -126,7 +126,10 @@
     "GET_THE_APP": "Hol dir die App!"
   },
   "FOOTER": {
-    "ABOUT": "Über uns"
+    "ABOUT": "Über uns",
+    "TEAM": {
+      "DAVID_DESCRIPTION": "Hey, ich bin David, der Gründer und Entwickler von Fluster. Ich habe meine Plattform entwickelt, weil ich Schwierigkeiten hatte, eine neue Wohnung und Mitbewohner zu finden, als ich nach Zürich umgezogen bin. Ich hoffe meine Plattform wird dir bei deiner Suche helfen!"
+    }
   },
   "SUMMARY": {
     "CATCHPHRASE": "Fluster, deine einfache Suche nach Mitbewohnern",

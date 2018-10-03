@@ -37,10 +37,38 @@
 <ng-container *ngIf="about">
   <hr/>
 
-  <section id="about" class="text-center">
+  <section class="team text-center">
+    <div class="container">
+      <h2>Team</h2>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-12 mt-4">
+          <ng-container (deferLoad)="teamImg.show = true">
+            <img src="{{teamImg.imgUrl}}" alt="David">
+          </ng-container>
+        </div>
+
+        <div class="col-md-6 mt-4">
+          <p>{{'FOOTER.TEAM.DAVID_DESCRIPTION' | translate}}</p>
+        </div>
+
+        <div class="col-md-12 justify-content-center">
+          <ul class="list-inline d-flex justify-content-center">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/daviddalbusco"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/david-dal-busco/"><fa-icon [icon]="['fab', 'linkedin-in']"></fa-icon></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about text-center">
     <div class="container">
       <h2>{{"FOOTER.ABOUT" | translate}}</h2>
-      <p><a href="/blog">Blog</a> | <a href="https://github.com/fluster">GitHub</a> | <a href="https://twitter.com/daviddalbusco">Team</a></p>
+      <p><a href="/blog">Blog</a> | <a href="https://github.com/fluster">GitHub</a></p>
     </div>
   </section>
 </ng-container>

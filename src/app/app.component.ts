@@ -44,6 +44,7 @@ import {faFacebook} from '@fortawesome/free-brands-svg-icons/faFacebook';
 import {faTwitter} from '@fortawesome/free-brands-svg-icons/faTwitter';
 import {faGithub} from '@fortawesome/free-brands-svg-icons/faGithub';
 import {faOsi} from '@fortawesome/free-brands-svg-icons/faOsi';
+import {faLinkedinIn} from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 
 import {faChevronDown} from '@fortawesome/pro-light-svg-icons/faChevronDown';
 import {faSadCry} from '@fortawesome/pro-light-svg-icons/faSadCry';
@@ -235,6 +236,7 @@ export class AppComponent implements OnInit, OnDestroy {
     library.add(faFacebook);
     library.add(faInstagram);
     library.add(faTwitter);
+    library.add(faLinkedinIn);
     library.add(faEnvelope);
     library.add(faChevronLeft);
     library.add(faChevronRight);

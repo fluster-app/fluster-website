@@ -25,7 +25,7 @@ export class BlogPostViewComponent implements OnInit, OnDestroy {
   private postId: string;
 
   post: string;
-  notFound: boolean = false;
+  notFound = false;
 
   constructor(private route: ActivatedRoute,
               private sanitizer: DomSanitizer,

@@ -126,7 +126,10 @@
     "GET_THE_APP": "Télécharge l'app!"
   },
   "FOOTER": {
-    "ABOUT": "À propos"
+    "ABOUT": "À propos",
+    "TEAM": {
+      "DAVID_DESCRIPTION": "Salut, je m’appelle David, je suis le fondateur et développeur de Fluster. J'ai créé ma plate-forme car j’ai eu du mal à trouver un appart et des colocs lorsque j'ai déménagé à Zurich. J'espère que ma plateforme t’aideras dans ta quête!"
+    }
   },
   "SUMMARY": {
     "CATCHPHRASE": "Fluster, tes colocs à portée de main",

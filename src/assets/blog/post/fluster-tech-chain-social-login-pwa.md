@@ -1,6 +1,6 @@
 # Chain a social login from your website to your PWA
 ### A technical introduction to the social login chain of the Fluster website
-![](/assets/blog/img/editor/david.jpg?raw=true) Posted by [David](mailto:david@fluster.io), Founder of Fluster, on September 20, 2018
+![](/assets/blog/img/editor/david.png?raw=true) Posted by [David](mailto:david@fluster.io), Founder of Fluster, on September 20, 2018
 
 ![](/assets/blog/img/post/fluster-social-login.gif?raw=true)
 

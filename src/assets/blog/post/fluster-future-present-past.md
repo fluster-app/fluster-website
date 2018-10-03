@@ -1,6 +1,6 @@
 # Fluster | Future Present Past
 ### More than just renting empty cold rooms
-![](/assets/blog/img/editor/david.jpg?raw=true) Posted by [David](mailto:david@fluster.io), Founder of Fluster, on September 6, 2018
+![](/assets/blog/img/editor/david.png?raw=true) Posted by [David](mailto:david@fluster.io), Founder of Fluster, on September 6, 2018
 
 ![](/assets/blog/img/post/home-blog.jpg?raw=true)
 

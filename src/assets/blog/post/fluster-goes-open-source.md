@@ -1,6 +1,6 @@
 # Fluster goes Open Source
 ### The motivations and technical facts behind it
-![](/assets/blog/img/editor/david.jpg?raw=true) Posted by [David](mailto:david@fluster.io), Founder of Fluster, on September 12, 2018
+![](/assets/blog/img/editor/david.png?raw=true) Posted by [David](mailto:david@fluster.io), Founder of Fluster, on September 12, 2018
 
 ![](/assets/blog/img/post/fluster-open-source.gif?raw=true)
 

@@ -312,7 +312,18 @@ section.download {
   }
 }
 
-section#about, section#contact-social {
+section.about {
+  padding-top: 0;
+}
+
+section.team {
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+section.about, section#contact-social {
   a, a:not([href]), a:not([href]):not([tabindex]) {
     color: inherit;
     font-weight: 300;
