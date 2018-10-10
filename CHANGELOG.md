@@ -1,3 +1,10 @@
+<a name="4.2.0"></a>
+# [4.2.0](https://github.com/fluster/fluster-website/compare/v4.1.0...v4.2.0) (2018-10-10)
+
+### Blog
+
+* publish Jonas' first blog post "Ruhe Oase in der WG - Fehlende Lernstille - Was tun?"
+
 <a name="4.1.0"></a>
 # [4.1.0](https://github.com/fluster/fluster-website/compare/v4.0.0...v4.1.0) (2018-10-03)
 
