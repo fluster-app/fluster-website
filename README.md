@@ -98,3 +98,5 @@ Fluster is released under the GNU Affero General Public License. Copyright Flust
 Fluster is developed by David Dal Busco.
 
 The Fluster logo is a registered trademark of David Dal Busco, Zürich, Switzerland. Please contact [me](mailto:david@fluster.io) if you want to use it.
+
+The licence of several stock photos, notably used in the Fluster's blog, restricts their usage to David Dal Busco, Zürich, Switzerland.
