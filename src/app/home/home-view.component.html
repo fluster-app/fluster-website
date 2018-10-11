@@ -1,6 +1,6 @@
 <app-header [highlights]="highlights"></app-header>
 
-<header id="page-top" [class.competition]="RESOURCES.COMPETITION">
+<header id="page-top" [class.competition]="RESOURCES.COMPETITION" class="skew">
   <div class="container">
     <div class="row">
       <div class="col-sm-7">
@@ -38,7 +38,7 @@
     </div>
   </div>
 
-  <div class="d-none d-sm-block header-down-arrow">
+  <div class="d-none d-sm-block header-down-arrow unskew">
     <div class="text-center">
       <a href="#features-publish"><fa-icon [icon]="['fal', 'chevron-down']" aria-hidden="true"></fa-icon></a>
     </div>
@@ -58,7 +58,7 @@
 
 <app-highlights (notifyHighlights)="highlightsLoaded($event)"></app-highlights>
 
-<section id="features-publish" class="features">
+<section id="features-publish" class="features skew-invert">
   <div class="container">
     <div class="row">
       <div class="col-md-8">

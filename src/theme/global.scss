@@ -195,10 +195,12 @@ header {
     }
   }
   @media (min-width: 576px) {
-    min-height: 100%;
+    min-height: 120%;
+
     .header-content {
       text-align: left;
       height: 100vh;
+
       .header-content-inner {
         max-width: none;
         margin: 0;
@@ -209,7 +211,20 @@ header {
     }
 
     .device-container {
-      margin: 100px auto 0;
+      margin: 150px auto 0;
+    }
+  }
+
+  @media(min-width: 768px) {
+    .header-content {
+      height: 120vh;
+    }
+  }
+
+  @media(min-width: 992px) {
+
+    div.header-down-arrow {
+      bottom: 14vh;
     }
   }
 
@@ -217,7 +232,7 @@ header {
     height: 40px;
     width: 100%;
     position: absolute;
-    bottom: 12px;
+    bottom: 16vh;
 
     a {
       color: white;
@@ -310,6 +325,10 @@ section.download {
   h2, p {
     color: white;
   }
+
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding: 160px 0;
 }
 
 section.about {
@@ -541,5 +560,23 @@ app-footer {
       font-size: 60%;
       font-weight: 300;
     }
+  }
+}
+
+.skew {
+  transform: skewY(-2deg);
+  transform-origin: top left;
+
+  div.container, div.unskew {
+    transform: skewY(2deg);
+  }
+}
+
+.skew-invert {
+  transform: skewY(2deg);
+  transform-origin: top right;
+
+  div.container, div.unskew {
+    transform: skewY(-2deg);
   }
 }
