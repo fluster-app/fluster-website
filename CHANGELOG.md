@@ -1,3 +1,10 @@
+<a name="4.3.0"></a>
+# [4.3.0](https://github.com/fluster/fluster-website/compare/v4.2.0...v4.3.0) (2018-10-11)
+
+### UX
+
+* add a bit of fun, skew the sections ([#5](https://github.com/fluster/fluster-website/issues/5))
+
 <a name="4.2.0"></a>
 # [4.2.0](https://github.com/fluster/fluster-website/compare/v4.1.0...v4.2.0) (2018-10-10)
 
