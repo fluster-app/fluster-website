@@ -221,18 +221,11 @@ header {
     }
   }
 
-  @media(min-width: 992px) {
-
-    div.header-down-arrow {
-      bottom: 14vh;
-    }
-  }
-
   .header-down-arrow {
     height: 40px;
     width: 100%;
     position: absolute;
-    bottom: 16vh;
+    bottom: 16%;
 
     a {
       color: white;
