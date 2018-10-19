@@ -16,7 +16,7 @@ const CORE_COMPONENTS = [
   imports: [
     CommonModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyC6nINcbbISK5EnwMrPpVUc4oAHi6JtDFw'
+      apiKey: '{{GOOGLE_MAP_API_KEY}}'
     })
   ],
   exports: [

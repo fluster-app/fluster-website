@@ -121,7 +121,8 @@ gulp.task('staging', function () {
 const replaceResources = ['./src/providers/core/utils/resources.ts', './src/index.html',
   './static/de/index.html', './static/fr/index.html', './static/it/index.html',
   './static/index_de.html', './static/index_fr.html', './static/index_it.html',
-  './static/termsofuse_de.html', './static/termsofuse_fr.html', './static/termsofuse_it.html', './static/termsofuse.html'
+  './static/termsofuse_de.html', './static/termsofuse_fr.html', './static/termsofuse_it.html', './static/termsofuse.html',
+  './src/components/core/google/google-map/google-map.module.ts'
 ];
 
 gulp.task('resources', function () {
@@ -170,6 +171,14 @@ gulp.task('resources', function () {
   replace({
     regex: "{{GOOGLE_LOGIN_WEB_CLIENT_ID}}",
     replacement: resources.GOOGLE.LOGIN.WEB_CLIENT_ID,
+    paths: replaceResources,
+    recursive: false,
+    silent: false
+  });
+
+  replace({
+    regex: "{{GOOGLE_MAP_API_KEY}}",
+    replacement: resources.GOOGLE.MAP.API_KEY,
     paths: replaceResources,
     recursive: false,
     silent: false
