@@ -6,6 +6,7 @@ import {Item} from '../../../../providers/model/item/item';
 
 // Utils
 import {Comparator} from '../../../../providers/core/utils/utils';
+import {Resources} from '../../../../providers/core/utils/resources';
 
 // Services
 import {GoogleStyle, GoogleStyleService} from '../../../../providers/core/map/google-style.service';
@@ -16,6 +17,8 @@ import {GoogleStyle, GoogleStyleService} from '../../../../providers/core/map/go
   styleUrls: ['./google-map.component.scss']
 })
 export class GoogleMapComponent implements OnInit {
+
+  RESOURCES: any = Resources.Constants;
 
   @Input() item: Item;
 
