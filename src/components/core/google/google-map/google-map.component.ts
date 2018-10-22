@@ -9,7 +9,12 @@ import {Comparator} from '../../../../providers/core/utils/utils';
 import {Resources} from '../../../../providers/core/utils/resources';
 
 // Services
-import {GoogleStyle, GoogleStyleService} from '../../../../providers/core/map/google-style.service';
+import {GoogleStyleService} from '../../../../providers/core/map/google-style.service';
+
+// Web Google Maps
+import {WebGoogleMapsCircle} from 'web-google-maps/dist/types/types/web-google-maps/web-google-maps-circle';
+import {WebGoogleMapsOptions} from 'web-google-maps/dist/types/types/web-google-maps/web-google-maps-options';
+import {WebGoogleMapsStyle} from 'web-google-maps/dist/types/types/web-google-maps/web-google-maps-style';
 
 @Component({
   selector: 'app-google-map',
@@ -25,11 +30,11 @@ export class GoogleMapComponent implements OnInit, OnChanges {
   latitude: number;
   longitude: number;
 
-  options: any;
+  options: WebGoogleMapsOptions;
 
-  style: GoogleStyle;
+  style: WebGoogleMapsStyle;
 
-  circles: any;
+  circles: WebGoogleMapsCircle[];
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object,
               private googleStyleService: GoogleStyleService) {
