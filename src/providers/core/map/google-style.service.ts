@@ -3,6 +3,7 @@ import {HttpClient} from '@angular/common/http';
 
 export interface GoogleStyle {
   styles: google.maps.MapTypeStyle[];
+  name: string;
 }
 
 @Injectable({
