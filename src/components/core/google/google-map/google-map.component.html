@@ -1,13 +1,3 @@
-<div id="google-map-container">
-  <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom" [styles]="style.styles"
-           [scrollwheel]="false" [mapDraggable]="false" [disableDoubleClickZoom]="true" [streetViewControl]="false"
-           *ngIf="isBrowser() && style != null && latitude != null && longitude != null">
-    <agm-circle [latitude]="latitude" [longitude]="longitude"
-                [radius]="1000"
-                [fillColor]="'#ff8ea3'"
-                [circleDraggable]="false"
-                [editable]="false"
-                [clickable]="false">
-    </agm-circle>
-  </agm-map>
-</div>
+<ng-container *ngIf="isBrowser() && style != null && latitude != null && longitude != null">
+  <web-google-maps [lat]="latitude" [lng]="longitude" [circles]="circles" [options]="options"></web-google-maps>
+</ng-container>

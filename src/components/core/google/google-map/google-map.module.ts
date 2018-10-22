@@ -1,7 +1,5 @@
-import {NgModule} from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-
-import {AgmCoreModule} from '@agm/core';
 
 import {GoogleMapComponent} from './google-map.component';
 
@@ -14,14 +12,12 @@ const CORE_COMPONENTS = [
     CORE_COMPONENTS
   ],
   imports: [
-    CommonModule,
-    AgmCoreModule.forRoot({
-      apiKey: '{{GOOGLE_MAP_API_KEY}}'
-    })
+    CommonModule
   ],
   exports: [
     CORE_COMPONENTS
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class GoogleMapModule {
 }

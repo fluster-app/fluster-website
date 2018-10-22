@@ -21,9 +21,12 @@ export class GoogleMapComponent implements OnInit {
 
   latitude: number;
   longitude: number;
-  zoom = 14;
+
+  options: any;
 
   style: GoogleStyle;
+
+  circles: any;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object,
               private googleStyleService: GoogleStyleService) {
@@ -38,6 +41,20 @@ export class GoogleMapComponent implements OnInit {
     if (!Comparator.isEmpty(this.item) && !Comparator.isEmpty(this.item.address)) {
       this.longitude = this.item.address.location.coordinates[0];
       this.latitude = this.item.address.location.coordinates[1];
+
+      this.options = {
+        zoom: 14
+      };
+
+      this.circles = {
+        lat: this.latitude,
+        lng: this.longitude,
+        radius: 1000,
+        fillColor: '#ff8ea3',
+        draggable: false,
+        editable: false,
+        clickable: false
+      };
     }
   }
 
