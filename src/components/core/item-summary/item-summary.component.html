@@ -1,7 +1,7 @@
 <div *ngIf="item != null">
   <!-- Item shared rooms -->
   <div class="row" *ngIf="isItemShare()">
-    <div class="col-md-12">
+    <div class="col-md-12 mb-2">
       <h1>
         <span *ngIf="item.attributes.sharedRooms > 1">{{item.attributes.sharedRooms}} {{'SELECT_ATTRIBUTES.SHARED_ROOMS'| translate}}</span>
         <span *ngIf="item.attributes.sharedRooms == 1">{{item.attributes.sharedRooms}} {{'SELECT_ATTRIBUTES.SHARED_ROOM'| translate}}</span>
@@ -11,7 +11,7 @@
 
   <!-- Item rooms -->
   <div class="row" *ngIf="isItemFlat()">
-    <div class="col-md-12">
+    <div class="col-md-12 mb-2">
       <h1>
         <span *ngIf="item.attributes.rooms > 1">{{item.attributes.rooms}} {{'SELECT_ATTRIBUTES.ROOMS'| translate}}</span>
         <span *ngIf="item.attributes.rooms == 1">{{item.attributes.rooms}} {{'SELECT_ATTRIBUTES.ROOM'| translate}}</span>
