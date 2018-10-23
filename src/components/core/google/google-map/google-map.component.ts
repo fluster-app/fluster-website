@@ -16,7 +16,6 @@ import {WebGoogleMapsCircle} from 'web-google-maps/dist/types/types/web-google-m
 import {WebGoogleMapsOptions} from 'web-google-maps/dist/types/types/web-google-maps/web-google-maps-options';
 import {WebGoogleMapsStyle} from 'web-google-maps/dist/types/types/web-google-maps/web-google-maps-style';
 
-
 @Component({
   selector: 'app-google-map',
   templateUrl: './google-map.component.html',
@@ -43,7 +42,7 @@ export class GoogleMapComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-    this.googleStyleService.findStyle().then((style: any) => {
+    this.googleStyleService.findStyle().then((style: WebGoogleMapsStyle) => {
       this.style = style;
     });
   }
