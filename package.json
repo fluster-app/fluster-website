@@ -12,7 +12,6 @@
     "build:ssr-staging": "gulp staging && npm run build:client-and-server-bundles && npm run compile:server && gulp copy-assets",
     "compile:server": "tsc -p server.tsconfig.json",
     "generate:prerender": "cd dist && node prerender",
-    "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:prerender": "cd dist/browser && http-server",
     "serve:ssr": "node dist/server",
     "serve": "node dist/server"
