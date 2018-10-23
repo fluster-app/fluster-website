@@ -1,4 +1,4 @@
-<ng-container *ngIf="isBrowser() && style != null && latitude != null && longitude != null && options && circles">
+<ng-container *ngIf="isBrowser()">
   <web-google-maps [apiKey]="RESOURCES.GOOGLE.MAPS.API_KEY" [circles]="circles"
                    [mapStyle]="style" [options]="options"
                    [lat]="latitude" [lng]="longitude"></web-google-maps>

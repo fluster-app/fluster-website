@@ -16,6 +16,7 @@ import {WebGoogleMapsCircle} from 'web-google-maps/dist/types/types/web-google-m
 import {WebGoogleMapsOptions} from 'web-google-maps/dist/types/types/web-google-maps/web-google-maps-options';
 import {WebGoogleMapsStyle} from 'web-google-maps/dist/types/types/web-google-maps/web-google-maps-style';
 
+
 @Component({
   selector: 'app-google-map',
   templateUrl: './google-map.component.html',
