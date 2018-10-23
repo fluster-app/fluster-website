@@ -58,7 +58,8 @@
     "FLAT_LIMITED": "Flat for temporary lease ",
     "SHARE": "Shared flat ",
     "MORE": "To send a viewing request and to discover more details, view this opportunity in our mobile app",
-    "BUTTON": "Open ad"
+    "BUTTON": "Open ad",
+    "BUTTON_SHARE": "Partager this ad"
   },
   "COMMON": {
     "SOCIAL": {

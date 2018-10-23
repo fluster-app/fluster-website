@@ -1,0 +1,48 @@
+div.web-social-share div.web-social-share-action-sheet div.web-social-share-action-sheet-container {
+  div.web-social-share-action-sheet-group {
+    justify-content: left;
+    padding: 16px;
+
+    web-social-share-target {
+
+      &:not(:last-child) {
+        padding-right: 8px;
+      }
+
+      button {
+
+        width: 3rem;
+        height: 3rem;
+
+        &.web-social-share-button {
+          background-repeat: no-repeat;
+        }
+
+        &.web-social-share-button-facebook {
+          background-image: url("/assets/icons/share/facebook-brands.svg");
+        }
+
+        &.web-social-share-button-twitter {
+          background-image: url("/assets/icons/share/twitter-brands.svg");
+        }
+
+        &.web-social-share-button-email {
+          background-image: url("/assets/icons/share/envelope-solid.svg");
+        }
+
+        &.web-social-share-button-linkedin {
+          background-image: url("/assets/icons/share/linkedin-brands.svg");
+        }
+
+        &.web-social-share-button-pinterest {
+          background-image: url("/assets/icons/share/pinterest-brands.svg");
+        }
+
+        &.web-social-share-button-reddit {
+          background-image: url("/assets/icons/share/reddit-brands.svg");
+        }
+
+      }
+    }
+  }
+}

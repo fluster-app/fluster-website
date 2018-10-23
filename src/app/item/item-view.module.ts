@@ -12,6 +12,7 @@ import {ItemViewComponent} from './item-view.component';
 import {ItemsService} from '../../providers/item/item/items.service';
 import {GoogleStyleService} from '../../providers/core/map/google-style.service';
 import {ItemSummaryModule} from '../../components/core/item-summary/item-summary.module';
+import {WebSocialShareModule} from '../../components/core/web-social-share/web-social-share.module';
 
 @NgModule({
   declarations: [ItemViewComponent],
@@ -24,7 +25,8 @@ import {ItemSummaryModule} from '../../components/core/item-summary/item-summary
     ComponentsModule,
     SliderModule,
     GoogleMapModule,
-    ItemSummaryModule
+    ItemSummaryModule,
+    WebSocialShareModule
   ],
   providers: [
     ItemsService,

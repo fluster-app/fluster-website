@@ -1,7 +1,7 @@
 @import "../../theme/variables";
 @import "../../theme/mixin";
 
-section#item {
+section#item, section#share {
   padding-top: 80px;
   padding-bottom: 70px;
 
@@ -29,10 +29,6 @@ section#item {
     padding-top: 24px;
 
     a {
-      border-radius: 8px;
-      font-size: 1rem;
-      color: white;
-      border-color: $fluster-peach3;
       background-color: $fluster-peach3;
     }
   }
@@ -40,9 +36,11 @@ section#item {
   #text-more {
     padding-top: 32px;
 
-    p {
-      display: flex;
-      justify-content: center;
+    @media(min-width: 992px) {
+      p {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 
@@ -57,7 +55,20 @@ section#item {
   }
 }
 
-section#item-map {
+section#item-map, section#share {
   padding-top: 0;
   padding-bottom: 75px;
+}
+
+a.btn {
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+  border-color: $fluster-peach3;
+}
+
+section#share {
+  a {
+    color: $fluster-peach3;
+  }
 }

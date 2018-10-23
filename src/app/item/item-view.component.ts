@@ -19,6 +19,9 @@ import {ItemsService} from '../../providers/item/item/items.service';
 import {HighlightsService} from '../../providers/item/highlights/highlights.service';
 import {ItemImage} from '../../components/core/slider/slider.component';
 
+// Web
+import {WebSocialShareInput} from 'web-social-share/dist/types/types/web-social-share/web-social-share-input';
+
 @Component({
   selector: 'app-item-view',
   styleUrls: ['./item-view.component.scss'],
@@ -32,6 +35,9 @@ export class ItemViewComponent implements OnInit, OnDestroy {
 
   item: Item;
   itemImages: ItemImage[];
+
+  showShare = false;
+  shareOptions: WebSocialShareInput;
 
   constructor(private route: ActivatedRoute,
               private sanitizer: DomSanitizer,
@@ -92,7 +98,7 @@ export class ItemViewComponent implements OnInit, OnDestroy {
               image: image,
               show: false
             });
-          })
+          });
         }
       }
     });
@@ -114,7 +120,7 @@ export class ItemViewComponent implements OnInit, OnDestroy {
       });
 
       this.meta.updateTag({property: 'og:type', content: 'article'});
-      this.meta.updateTag({property: 'og:url', content: 'https://fluster.io/item/' + this.item.hashId});
+      this.meta.updateTag({property: 'og:url', content: this.RESOURCES.SOCIAL_SHARING.FLUSTER_WEBSITE + '/item/' + this.item.hashId});
     }
   }
 
@@ -172,6 +178,52 @@ export class ItemViewComponent implements OnInit, OnDestroy {
 
   sanitize(url: string): SafeUrl {
     return this.sanitizer.bypassSecurityTrustUrl(url);
+  }
+
+  async share(): Promise<{}> {
+    return new Promise((resolve) => {
+      this.shareOptions = {
+        config: [{
+          facebook: {
+            socialShareUrl: this.RESOURCES.SOCIAL_SHARING.FLUSTER_WEBSITE + '/item/' + this.item.hashId,
+            socialSharePopupWidth: 400,
+            socialSharePopupHeight: 400
+          }
+        }, {
+          twitter: {
+            socialShareUrl: this.RESOURCES.SOCIAL_SHARING.FLUSTER_WEBSITE + '/item/' + this.item.hashId,
+            socialSharePopupWidth: 300,
+            socialSharePopupHeight: 400
+          }
+        }, {
+          reddit: {
+            socialShareUrl: this.RESOURCES.SOCIAL_SHARING.FLUSTER_WEBSITE + '/item/' + this.item.hashId,
+            socialSharePopupWidth: 300,
+            socialSharePopupHeight: 500
+          }
+        }, {
+          linkedin: {
+            socialShareUrl: this.RESOURCES.SOCIAL_SHARING.FLUSTER_WEBSITE + '/item/' + this.item.hashId
+          }
+        }, {
+          pinterest: {
+            socialShareUrl: this.RESOURCES.SOCIAL_SHARING.FLUSTER_WEBSITE + '/item/' + this.item.hashId
+          }
+        }, {
+          email: {
+            socialShareBody: this.RESOURCES.SOCIAL_SHARING.FLUSTER_WEBSITE + '/item/' + this.item.hashId
+          }
+        }]
+      };
+
+      this.showShare = true;
+
+      resolve();
+    });
+  }
+
+  shareClose() {
+    this.showShare = false;
   }
 
 }

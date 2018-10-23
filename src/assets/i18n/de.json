@@ -58,7 +58,8 @@
     "FLAT_LIMITED": "Wohnen auf Zeit ",
     "SHARE": "WG-Zimmer ",
     "MORE": "Um einen Besichtigungstermin zu vereinbaren und mehr Details zu entdecken, öffne dieses Gesuch in unserer App",
-    "BUTTON": "Gesuch öffnen"
+    "BUTTON": "Gesuch öffnen",
+    "BUTTON_SHARE": "Gesuch teilen"
   },
   "COMMON": {
     "SOCIAL": {

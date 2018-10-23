@@ -58,7 +58,8 @@
     "FLAT_LIMITED": "Appartamento a tempo determinato ",
     "SHARE": "Stanza in appartamento condiviso ",
     "MORE": "Per fissare un appuntamento e scoprire maggiori dettagli, visualizza questo annuncio nella nostra app",
-    "BUTTON": "Apri l'annuncio"
+    "BUTTON": "Apri l'annuncio",
+    "BUTTON_SHARE": "Condividi l'annuncio"
   },
   "COMMON": {
     "SOCIAL": {

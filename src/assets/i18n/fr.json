@@ -58,7 +58,8 @@
     "FLAT_LIMITED": "Appartement à durée déterminée ",
     "SHARE": "Colocation ",
     "MORE": "Pour contacter l'annonceur et découvrir de plus amples détails, consulte cette annonce dans notre application mobile",
-    "BUTTON": "Ouvrir l'annonce"
+    "BUTTON": "Ouvrir l'annonce",
+    "BUTTON_SHARE": "Partager l'annonce"
   },
   "COMMON": {
     "SOCIAL": {

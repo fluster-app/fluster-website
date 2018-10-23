@@ -42,6 +42,18 @@
   </div>
 </section>
 
+<section id="share">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="badges">
+        <a (click)="share()" class="btn btn-xl">{{'TEXT.BUTTON_SHARE'| translate}}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <app-download></app-download>
 
 <app-footer [home]="true"></app-footer>
+
+<app-web-social-share [show]="showShare" [share]="shareOptions" (closed)="shareClose()"></app-web-social-share>

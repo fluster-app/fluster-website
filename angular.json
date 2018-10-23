@@ -41,6 +41,16 @@
                 "glob": "webgooglemaps/*",
                 "input": "node_modules/web-google-maps/dist",
                 "output": "./"
+              },
+              {
+                "glob": "websocialshare.js",
+                "input": "node_modules/web-social-share/dist",
+                "output": "./"
+              },
+              {
+                "glob": "websocialshare/*",
+                "input": "node_modules/web-social-share/dist",
+                "output": "./"
               }
             ],
             "styles": [
