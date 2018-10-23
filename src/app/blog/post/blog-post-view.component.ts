@@ -10,6 +10,9 @@ import {MarkdownService} from 'ngx-markdown';
 import {Comparator} from '../../../providers/core/utils/utils';
 import {Resources} from '../../../providers/core/utils/resources';
 
+// Web
+import {WebSocialShareInput} from 'web-social-share/dist/types/types/web-social-share/web-social-share-input';
+
 @Component({
   selector: 'app-blog-post-view',
   styleUrls: ['./blog-post-view.component.scss'],
@@ -26,6 +29,9 @@ export class BlogPostViewComponent implements OnInit, OnDestroy {
 
   post: string;
   notFound = false;
+
+  showShare = false;
+  shareOptions: WebSocialShareInput;
 
   constructor(private route: ActivatedRoute,
               private sanitizer: DomSanitizer,
@@ -65,7 +71,7 @@ export class BlogPostViewComponent implements OnInit, OnDestroy {
         const images: string[] = content.match(/(?:\/assets\/blog\/img\/post)(.*)(?:jpg|gif)/g);
 
         this.meta.updateTag({property: 'og:type', content: 'article'});
-        this.meta.updateTag({property: 'og:url', content: 'https://fluster.io/blog/post/' + this.postId});
+        this.meta.updateTag({property: 'og:url', content: this.RESOURCES.SOCIAL_SHARING.FLUSTER_WEBSITE + '/blog/post/' + this.postId});
 
         if (Comparator.hasElements(images)) {
           this.meta.updateTag({
@@ -100,6 +106,52 @@ export class BlogPostViewComponent implements OnInit, OnDestroy {
 
       resolve();
     });
+  }
+
+  async share(): Promise<{}> {
+    return new Promise((resolve) => {
+      this.shareOptions = {
+        config: [{
+          facebook: {
+            socialShareUrl: this.RESOURCES.SOCIAL_SHARING.FLUSTER_WEBSITE + + '/blog/post/' + this.postId,
+            socialSharePopupWidth: 400,
+            socialSharePopupHeight: 400
+          }
+        }, {
+          twitter: {
+            socialShareUrl: this.RESOURCES.SOCIAL_SHARING.FLUSTER_WEBSITE + + '/blog/post/' + this.postId,
+            socialSharePopupWidth: 300,
+            socialSharePopupHeight: 400
+          }
+        }, {
+          reddit: {
+            socialShareUrl: this.RESOURCES.SOCIAL_SHARING.FLUSTER_WEBSITE + + '/blog/post/' + this.postId,
+            socialSharePopupWidth: 300,
+            socialSharePopupHeight: 500
+          }
+        }, {
+          linkedin: {
+            socialShareUrl: this.RESOURCES.SOCIAL_SHARING.FLUSTER_WEBSITE + + '/blog/post/' + this.postId
+          }
+        }, {
+          pinterest: {
+            socialShareUrl: this.RESOURCES.SOCIAL_SHARING.FLUSTER_WEBSITE + + '/blog/post/' + this.postId
+          }
+        }, {
+          email: {
+            socialShareBody: this.RESOURCES.SOCIAL_SHARING.FLUSTER_WEBSITE + + '/blog/post/' + this.postId
+          }
+        }]
+      };
+
+      this.showShare = true;
+
+      resolve();
+    });
+  }
+
+  shareClose() {
+    this.showShare = false;
   }
 }
 

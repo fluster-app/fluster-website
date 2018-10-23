@@ -8,6 +8,7 @@ import {BlogPostViewComponent} from './blog-post-view.component';
 import {ComponentsModule} from '../../../components/core/components.module';
 import {MarkdownModule} from 'ngx-markdown';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {WebSocialShareModule} from '../../../components/core/web-social-share/web-social-share.module';
 
 @NgModule({
   declarations: [BlogPostViewComponent],
@@ -20,7 +21,8 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     TranslateModule.forChild(),
     ComponentsModule,
     MarkdownModule.forChild(),
-    FontAwesomeModule
+    FontAwesomeModule,
+    WebSocialShareModule
   ]
 })
 export class BlogPostViewModule {

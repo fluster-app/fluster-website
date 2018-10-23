@@ -59,7 +59,8 @@
     "SHARE": "Shared flat ",
     "MORE": "To send a viewing request and to discover more details, view this opportunity in our mobile app",
     "BUTTON": "Open ad",
-    "BUTTON_SHARE": "Partager this ad"
+    "BUTTON_SHARE_AD": "Share this ad",
+    "BUTTON_SHARE": "Share"
   },
   "COMMON": {
     "SOCIAL": {

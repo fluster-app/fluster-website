@@ -37,6 +37,7 @@ import {faPaperPlane} from '@fortawesome/pro-regular-svg-icons/faPaperPlane';
 import {faSearch} from '@fortawesome/pro-regular-svg-icons/faSearch';
 import {faHeart} from '@fortawesome/pro-regular-svg-icons/faHeart';
 import {faTimesCircle} from '@fortawesome/pro-regular-svg-icons/faTimesCircle';
+import {faShare} from '@fortawesome/pro-regular-svg-icons/faShare';
 
 import {faFacebookF} from '@fortawesome/free-brands-svg-icons/faFacebookF';
 import {faInstagram} from '@fortawesome/free-brands-svg-icons/faInstagram';
@@ -253,6 +254,7 @@ export class AppComponent implements OnInit, OnDestroy {
     library.add(faGiftLight);
     library.add(faFemale);
     library.add(faMale);
+    library.add(faShare);
   }
 
   private initCookieConsent() {

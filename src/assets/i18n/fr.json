@@ -59,7 +59,8 @@
     "SHARE": "Colocation ",
     "MORE": "Pour contacter l'annonceur et découvrir de plus amples détails, consulte cette annonce dans notre application mobile",
     "BUTTON": "Ouvrir l'annonce",
-    "BUTTON_SHARE": "Partager l'annonce"
+    "BUTTON_SHARE_AD": "Partager l'annonce",
+    "BUTTON_SHARE": "Partager"
   },
   "COMMON": {
     "SOCIAL": {

@@ -61,4 +61,13 @@ app-blog-post-view {
     color: $fluster-peach1;
   }
 
+  li.share {
+    a.btn {
+      border-radius: 8px;
+      font-size: 1rem;
+      color: white;
+      border-color: $fluster-peach1;
+    }
+  }
+
 }

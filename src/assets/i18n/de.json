@@ -59,7 +59,8 @@
     "SHARE": "WG-Zimmer ",
     "MORE": "Um einen Besichtigungstermin zu vereinbaren und mehr Details zu entdecken, öffne dieses Gesuch in unserer App",
     "BUTTON": "Gesuch öffnen",
-    "BUTTON_SHARE": "Gesuch teilen"
+    "BUTTON_SHARE_AD": "Gesuch teilen",
+    "BUTTON_SHARE": "Teilen"
   },
   "COMMON": {
     "SOCIAL": {
