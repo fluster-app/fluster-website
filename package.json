@@ -51,7 +51,7 @@
     "rxjs": "^6.3.3",
     "serialize-javascript": "^1.5.0",
     "underscore": "^1.9.1",
-    "web-google-maps": "file:../opensource/web-google-maps",
+    "web-google-maps": "^1.0.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
