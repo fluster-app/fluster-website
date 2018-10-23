@@ -58,7 +58,7 @@ p {
 
 .navbar {
   @include heading-font();
-  z-index: 1;
+  z-index: 3;
 
   .navbar-toggler {
     button {
@@ -98,7 +98,7 @@ p {
     background-color: white;
     border-color: rgba($gray-darker, 0.05);
     @include transition-all();
-    z-index: 1;
+    z-index: 3;
 
     .navbar-brand {
       a {
