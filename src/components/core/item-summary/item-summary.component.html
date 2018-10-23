@@ -13,8 +13,10 @@
   <div class="row" *ngIf="isItemFlat()">
     <div class="col-md-12 mb-2">
       <h1>
-        <span *ngIf="item.attributes.rooms > 1">{{item.attributes.rooms}} {{'SELECT_ATTRIBUTES.ROOMS'| translate}}</span>
-        <span *ngIf="item.attributes.rooms == 1">{{item.attributes.rooms}} {{'SELECT_ATTRIBUTES.ROOM'| translate}}</span>
+        <span
+          *ngIf="item.attributes.rooms > 1">{{item.attributes.rooms}} {{'SELECT_ATTRIBUTES.ROOMS'| translate}}</span>
+        <span
+          *ngIf="item.attributes.rooms == 1">{{item.attributes.rooms}} {{'SELECT_ATTRIBUTES.ROOM'| translate}}</span>
         <span *ngIf="item.attributes.size > 0">{{item.attributes.size}} {{'CORE.SQUARE_METER'| translate}}</span>
       </h1>
     </div>
@@ -42,6 +44,20 @@
         <span *ngIf="!isAvailableNow() && hasEndAvailability()">
             {{'ITEMS.AVAILABILITY.AVAILABLE_FROM'| translate:{formattedDate: getFormattedDate(item.attributes.availability.begin)} }} {{'ITEMS.AVAILABILITY.AVAILABLE_TILL' | translate:{formattedDate: getFormattedDate(item.attributes.availability.end)} }}
         </span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Visibility -->
+  <div class="row" *ngIf="isItemShare() && hasUserLimitations()">
+    <div class="col-md-12">
+      <p>
+        <span>{{'ITEM_DETAILS.CONTENT.VISIBILITY.LOOKING_FOR'| translate}}&nbsp;</span>
+        <fa-icon [icon]="['fal', 'male']" *ngIf="hasVisibilityMale()"></fa-icon>
+        <fa-icon [icon]="['fal', 'female']" *ngIf="hasVisibilityFemale()"></fa-icon>
+        <span>&nbsp;</span>
+        {{item.userLimitations.age?.min}}<span>-</span>{{item.userLimitations.age?.max}}
+        <span>{{'ITEM_DETAILS.CONTENT.VISIBILITY.YEARS_OLD'| translate}}</span>
       </p>
     </div>
   </div>

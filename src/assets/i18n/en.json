@@ -46,7 +46,11 @@
   },
   "ITEM_DETAILS": {
     "CONTENT": {
-      "PRICE_GROSS": "Rental fee/month"
+      "PRICE_GROSS": "Rental fee/month",
+      "VISIBILITY": {
+        "LOOKING_FOR": "Roommates wanted",
+        "YEARS_OLD": "years old"
+      }
     }
   },
   "TEXT": {

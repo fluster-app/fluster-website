@@ -33,11 +33,22 @@ export class ItemDetail {
   otherPhotos: string[];
 }
 
+export class ItemUserLimitationsAge {
+  min: number;
+  max: number;
+}
+
+export class ItemUserLimitations {
+  age: ItemUserLimitationsAge;
+  gender: string;
+}
+
 export class Item {
   hashId: string;
   title: string;
   address: ItemItemAddress;
   attributes: ItemItemAttributes;
+  userLimitations: ItemUserLimitations;
   mainPhoto: string;
   source: string;
   type: string;
@@ -45,5 +56,5 @@ export class Item {
   itemDetail: ItemDetail;
 
   // To lazy load images
-  showImage: boolean = false;
+  showImage = false;
 }

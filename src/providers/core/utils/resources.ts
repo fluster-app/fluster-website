@@ -86,6 +86,13 @@ export class Resources {
         TYPE: {
           TAKEOVER: 'takeover',
           SHARE: 'share'
+        },
+        USER_RESTRICTIONS: {
+          GENDER: {
+            MALE: 'male',
+            FEMALE: 'female',
+            IRRELEVANT: 'irrelevant'
+          }
         }
       },
 

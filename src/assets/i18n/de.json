@@ -46,7 +46,11 @@
   },
   "ITEM_DETAILS": {
     "CONTENT": {
-      "PRICE_GROSS": "Miete/Monat"
+      "PRICE_GROSS": "Miete/Monat",
+      "VISIBILITY": {
+        "LOOKING_FOR": "Mitbewohner gesucht",
+        "YEARS_OLD": "Jahre alt"
+      }
     }
   },
   "TEXT": {

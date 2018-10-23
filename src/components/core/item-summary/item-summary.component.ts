@@ -6,15 +6,19 @@ import {Item} from '../../../providers/model/item/item';
 // Utils
 import {ItemsComparator} from '../../../providers/core/utils/items-utils';
 import {Comparator} from '../../../providers/core/utils/utils';
+import {Resources} from '../../../providers/core/utils/resources';
 
 // Services
 import {CurrencyService} from '../../../providers/core/currency/currency.service';
 
 @Component({
   selector: 'app-item-summary',
-  templateUrl: './item-summary.component.html'
+  templateUrl: './item-summary.component.html',
+  styleUrls: ['./item-summary.component.scss']
 })
 export class ItemSummaryComponent implements OnInit {
+
+  RESOURCES: any = Resources.Constants;
 
   @Input() item: Item;
 
@@ -65,4 +69,21 @@ export class ItemSummaryComponent implements OnInit {
     return ItemsComparator.getItemFormattedDate(input);
   }
 
+  hasUserLimitations(): boolean {
+    return !Comparator.isEmpty(this.item) && !Comparator.isEmpty(this.item.userLimitations);
+  }
+
+  hasVisibilityMale(): boolean {
+    return this.hasVisibility(this.RESOURCES.ITEM.USER_RESTRICTIONS.GENDER.MALE);
+  }
+
+  hasVisibilityFemale(): boolean {
+    return this.hasVisibility(this.RESOURCES.ITEM.USER_RESTRICTIONS.GENDER.FEMALE);
+  }
+
+  private hasVisibility(gender: string): boolean {
+    return this.item.userLimitations.gender && (
+      this.item.userLimitations.gender === this.RESOURCES.ITEM.USER_RESTRICTIONS.GENDER.IRRELEVANT ||
+      this.item.userLimitations.gender === gender);
+  }
 }

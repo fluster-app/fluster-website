@@ -51,6 +51,8 @@ import {faSadCry} from '@fortawesome/pro-light-svg-icons/faSadCry';
 import {faLightbulbOn} from '@fortawesome/pro-light-svg-icons/faLightbulbOn';
 import {faHourglassEnd} from '@fortawesome/pro-light-svg-icons/faHourglassEnd';
 import {faGift as faGiftLight} from '@fortawesome/pro-light-svg-icons/faGift';
+import {faFemale} from '@fortawesome/pro-light-svg-icons/faFemale';
+import {faMale} from '@fortawesome/pro-light-svg-icons/faMale';
 
 @Component({
   selector: 'app-root',
@@ -178,7 +180,7 @@ export class AppComponent implements OnInit, OnDestroy {
     // We only set the following meta tags if we are not displaying an item or a blog post
     // For these new meta tags will be interpreted inside their routes
     if (Comparator.isStringEmpty(this.req.originalUrl) ||
-        (this.req.originalUrl.indexOf('/item/') === -1 && (this.req.originalUrl.indexOf('/blog/post/') == -1))) {
+        (this.req.originalUrl.indexOf('/item/') === -1 && (this.req.originalUrl.indexOf('/blog/post/') === -1))) {
       const description = this.translateService.instant('META.DESCRIPTION');
 
       this.meta.updateTag({name: 'description', content: description});
@@ -249,6 +251,8 @@ export class AppComponent implements OnInit, OnDestroy {
     library.add(faLightbulbOn);
     library.add(faHourglassEnd);
     library.add(faGiftLight);
+    library.add(faFemale);
+    library.add(faMale);
   }
 
   private initCookieConsent() {

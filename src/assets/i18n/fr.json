@@ -46,7 +46,11 @@
   },
   "ITEM_DETAILS": {
     "CONTENT": {
-      "PRICE_GROSS": "Loyer mensuel"
+      "PRICE_GROSS": "Loyer mensuel",
+      "VISIBILITY": {
+        "LOOKING_FOR": "Colocataires recherchés",
+        "YEARS_OLD": "ans"
+      }
     }
   },
   "TEXT": {

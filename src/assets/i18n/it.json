@@ -46,7 +46,11 @@
   },
   "ITEM_DETAILS": {
     "CONTENT": {
-      "PRICE_GROSS": "Affitto/mese"
+      "PRICE_GROSS": "Affitto/mese",
+      "VISIBILITY": {
+        "LOOKING_FOR": "Cercasi compagni di stanza",
+        "YEARS_OLD": "anni"
+      }
     }
   },
   "TEXT": {
