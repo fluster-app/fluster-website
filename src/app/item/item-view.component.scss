@@ -39,6 +39,11 @@ section#item {
 
   #text-more {
     padding-top: 32px;
+
+    p {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   @media (max-width: 992px) {
