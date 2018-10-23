@@ -121,8 +121,7 @@ gulp.task('staging', function () {
 const replaceResources = ['./src/providers/core/utils/resources.ts', './src/index.html',
   './static/de/index.html', './static/fr/index.html', './static/it/index.html',
   './static/index_de.html', './static/index_fr.html', './static/index_it.html',
-  './static/termsofuse_de.html', './static/termsofuse_fr.html', './static/termsofuse_it.html', './static/termsofuse.html',
-  './src/components/core/google/google-map/google-map.module.ts'
+  './static/termsofuse_de.html', './static/termsofuse_fr.html', './static/termsofuse_it.html', './static/termsofuse.html'
 ];
 
 gulp.task('resources', function () {

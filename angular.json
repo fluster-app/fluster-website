@@ -31,7 +31,17 @@
                 "input": "node_modules/cookieconsent/build/",
                 "output": "/assets/cookieconsent/"
               },
-              "src/manifest.json"
+              "src/manifest.json",
+              {
+                "glob": "webgooglemaps.js",
+                "input": "node_modules/web-google-maps/dist",
+                "output": "./"
+              },
+              {
+                "glob": "webgooglemaps/*",
+                "input": "node_modules/web-google-maps/dist",
+                "output": "./"
+              }
             ],
             "styles": [
               {

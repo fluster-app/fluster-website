@@ -17,6 +17,7 @@ export class Resources {
     // Third party keys
     const facebookAppId = '{{FACEBOOK_APP_ID}}';
     const googleWebClientId = '{{GOOGLE_LOGIN_WEB_CLIENT_ID}}';
+    const goolgeMapsApiKey = '{{GOOGLE_MAP_API_KEY}}';
 
     return {
 
@@ -75,6 +76,9 @@ export class Resources {
             URL: 'https://accounts.google.com/o/oauth2/v2/auth?',
             REDIRECT_URL: pwaUrl
           },
+        },
+        MAPS: {
+          API_KEY: goolgeMapsApiKey
         }
       },
 

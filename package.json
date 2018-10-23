@@ -17,7 +17,6 @@
     "serve": "node dist/server"
   },
   "dependencies": {
-    "@agm/core": "^1.0.0-beta.5",
     "@angular/animations": "6.1.9",
     "@angular/cdk": "6.4.7",
     "@angular/common": "6.1.9",
@@ -52,6 +51,7 @@
     "rxjs": "^6.3.3",
     "serialize-javascript": "^1.5.0",
     "underscore": "^1.9.1",
+    "web-google-maps": "^1.0.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

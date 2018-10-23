@@ -1,16 +1,15 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
-export interface GoogleStyle {
-  styles: google.maps.MapTypeStyle[];
-}
+// Web Google Maps
+import {WebGoogleMapsStyle} from 'web-google-maps/dist/types/types/web-google-maps/web-google-maps-style';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GoogleStyleService {
 
-  private style: GoogleStyle = null;
+  private style: WebGoogleMapsStyle = null;
 
   private loaded: boolean;
 
@@ -25,7 +24,7 @@ export class GoogleStyleService {
         resolve(this.style);
       } else {
         this.httpClient.get('/assets/map/fluster-map-style.json')
-          .subscribe((res: GoogleStyle) => {
+          .subscribe((res: WebGoogleMapsStyle) => {
             this.style = res;
             this.loaded = true;
 
