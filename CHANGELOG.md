@@ -11,6 +11,10 @@
 * display information about the visibility of each flatshares and flats ([#8](https://github.com/fluster/fluster-website/issues/8))
 * a more share options on the blog posts ([#4](https://github.com/fluster/fluster-website/issues/4))
 
+### Fix
+
+* don't display Font Awesome icons full screen at boot time ([#11](https://github.com/fluster/fluster-website/issues/11))
+
 ### Technical
 
 * replace agm library for Google Maps with own Web Component web-google-maps ([#6](https://github.com/fluster/fluster-website/issues/6))
