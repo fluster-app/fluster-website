@@ -1,3 +1,7 @@
+# [Gemeinsame WG Aktivitäten #1](/blog/post/wg-uno)
+### [Der grösste Klassiker](/blog/post/wg-uno)
+Posted by [Jonas](mailto:info@fluster.io) on October 24, 2018
+
 # [Ruhe Oase in der WG](/blog/post/wg-ruhezeit)
 ### [Fehlende Lernstille - Was tun?](/blog/post/wg-ruhezeit)
 Posted by [Jonas](mailto:info@fluster.io) on October 10, 2018

@@ -2,6 +2,10 @@
 
 app-blog-post-view {
 
+  p {
+    text-align: justify;
+  }
+
   img {
     max-width: 100%;
     padding-bottom: 10px;
@@ -12,6 +16,12 @@ app-blog-post-view {
     img {
       width: 40px;
       margin: 8px;
+    }
+  }
+
+  .post p:not(:first-of-type) {
+    img {
+      width: 100% ;
     }
   }
 
