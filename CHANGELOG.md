@@ -1,3 +1,21 @@
+<a name="4.4.0"></a>
+# [4.4.0](https://github.com/fluster/fluster-website/compare/v4.3.0...v4.4.0) (2018-10-24)
+
+### Blog
+
+* publish a new blog post about gaming together in a flatshare ([#9](https://github.com/fluster/fluster-website/issues/9))
+
+### Features
+
+* add share options on the details of each flatshares and flats ([#10](https://github.com/fluster/fluster-website/issues/10))
+* display information about the visibility of each flatshares and flats ([#8](https://github.com/fluster/fluster-website/issues/8))
+* a more share options on the blog posts ([#4](https://github.com/fluster/fluster-website/issues/4))
+
+### Technical
+
+* replace agm library for Google Maps with own Web Component web-google-maps ([#6](https://github.com/fluster/fluster-website/issues/6))
+* sync website with universtal starter repo ([#7](https://github.com/fluster/fluster-website/issues/7))
+
 <a name="4.3.0"></a>
 # [4.3.0](https://github.com/fluster/fluster-website/compare/v4.2.0...v4.3.0) (2018-10-11)
 
