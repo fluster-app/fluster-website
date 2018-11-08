@@ -1,3 +1,14 @@
+<a name="4.5.0"></a>
+# [4.5.0](https://github.com/fluster/fluster-website/compare/v4.4.0...v4.5.0) (2018-11-08)
+
+### Blog
+
+* publish a new blog post about basic rules in a flatshare ([3f9926](https://github.com/fluster/fluster-website/commit/3f99e26be84b5b45bede8fda49e44d58ae2ec39c))
+
+### Lib
+
+* update Angular v7 ([8087bf6](https://github.com/fluster/fluster-website/commit/8087bf635a34bdf60a05e5c3fbf8eb2e36011042))
+
 <a name="4.4.0"></a>
 # [4.4.0](https://github.com/fluster/fluster-website/compare/v4.3.0...v4.4.0) (2018-10-24)
 
