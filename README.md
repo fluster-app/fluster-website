@@ -85,7 +85,7 @@ npm run serve
 
 ## Feedback
 
-Feel free to send me feedback on [Twitter](https://twitter.com/daviddalbusco) or [file an issue](https://github.com/fluster/fluster-appx/issues/new). Feature requests are always welcome.
+Feel free to send me feedback on [Twitter](https://twitter.com/daviddalbusco) or [file an issue](https://github.com/fluster/fluster-app/issues/new). Feature requests are always welcome.
 
 ## Social
 
