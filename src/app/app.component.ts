@@ -4,6 +4,12 @@ import {Meta} from '@angular/platform-browser';
 import {Observable, Subscription} from 'rxjs';
 
 import {TranslateService} from '@ngx-translate/core';
+
+import * as translationEn from 'assets/i18n/en.json';
+import * as translationFr from 'assets/i18n/fr.json';
+import * as translationIt from 'assets/i18n/it.json';
+import * as translationDe from 'assets/i18n/de.json';
+
 import {isPlatformServer} from '@angular/common';
 
 import {Resources} from '../providers/core/utils/resources';
@@ -114,6 +120,12 @@ export class AppComponent implements OnInit, OnDestroy {
   private initLang(): Observable<Object> {
     this.translateService.addLangs(['en', 'de', 'fr', 'it']);
     this.translateService.setDefaultLang('en');
+
+    // https://github.com/ngx-translate/core/issues/922
+    this.translateService.setTranslation('en', translationEn.default);
+    this.translateService.setTranslation('fr', translationFr.default);
+    this.translateService.setTranslation('it', translationIt.default);
+    this.translateService.setTranslation('de', translationDe.default);
 
     if (isPlatformServer(this.platformId)) {
       return this.initLangServer();
