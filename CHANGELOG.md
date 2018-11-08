@@ -1,3 +1,10 @@
+<a name="4.5.1"></a>
+# [4.5.1](https://github.com/fluster/fluster-website/compare/v4.5.0...v4.5.1) (2018-11-08)
+
+### Blog
+
+* revert to Angular v6 ([bec738d](https://github.com/fluster/fluster-website/commit/bec738d5627bf569e2c03b93704be3ac14bcbf72))
+
 <a name="4.5.0"></a>
 # [4.5.0](https://github.com/fluster/fluster-website/compare/v4.4.0...v4.5.0) (2018-11-08)
 
