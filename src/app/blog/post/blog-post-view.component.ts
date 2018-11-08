@@ -1,6 +1,8 @@
-import {Component, OnDestroy, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, Inject, OnDestroy, OnInit, PLATFORM_ID, ViewEncapsulation} from '@angular/core';
 import {DomSanitizer, Meta, SafeUrl} from '@angular/platform-browser';
 import {ActivatedRoute} from '@angular/router';
+
+import {isPlatformServer} from '@angular/common';
 
 import {Subscription} from 'rxjs';
 
@@ -33,7 +35,8 @@ export class BlogPostViewComponent implements OnInit, OnDestroy {
   showShare = false;
   shareOptions: WebSocialShareInput;
 
-  constructor(private route: ActivatedRoute,
+  constructor(@Inject(PLATFORM_ID) private platformId: Object,
+              private route: ActivatedRoute,
               private sanitizer: DomSanitizer,
               private markdownService: MarkdownService,
               private meta: Meta) {
@@ -44,7 +47,10 @@ export class BlogPostViewComponent implements OnInit, OnDestroy {
     this.sub = this.route.params.subscribe(async (params) => {
       this.postId = params['id'];
       this.post =  './assets/blog/post/' + this.postId + '.md';
-      await this.updateMetadata();
+
+      if (isPlatformServer(this.platformId)) {
+        await this.updateMetadata();
+      }
     });
   }
 

@@ -1,8 +1,10 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, Inject, OnDestroy, OnInit, PLATFORM_ID} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {Meta} from '@angular/platform-browser';
 import {DomSanitizer, SafeUrl} from '@angular/platform-browser';
 import {Subscription} from 'rxjs';
+
+import {isPlatformServer} from '@angular/common';
 
 import {TranslateService} from '@ngx-translate/core';
 
@@ -39,7 +41,8 @@ export class ItemViewComponent implements OnInit, OnDestroy {
   showShare = false;
   shareOptions: WebSocialShareInput;
 
-  constructor(private route: ActivatedRoute,
+  constructor(@Inject(PLATFORM_ID) private platformId: Object,
+              private route: ActivatedRoute,
               private sanitizer: DomSanitizer,
               private meta: Meta,
               private translateService: TranslateService,
@@ -79,7 +82,10 @@ export class ItemViewComponent implements OnInit, OnDestroy {
   private async loadItem(result: Item) {
     this.item = result;
     await this.concatImages();
-    this.updateMetadata();
+
+    if (isPlatformServer(this.platformId)) {
+      this.updateMetadata();
+    }
   }
 
   concatImages(): Promise<void> {
