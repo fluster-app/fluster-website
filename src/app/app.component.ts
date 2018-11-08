@@ -121,12 +121,6 @@ export class AppComponent implements OnInit, OnDestroy {
     this.translateService.addLangs(['en', 'de', 'fr', 'it']);
     this.translateService.setDefaultLang('en');
 
-    // https://github.com/ngx-translate/core/issues/922
-    this.translateService.setTranslation('en', translationEn.default);
-    this.translateService.setTranslation('fr', translationFr.default);
-    this.translateService.setTranslation('it', translationIt.default);
-    this.translateService.setTranslation('de', translationDe.default);
-
     if (isPlatformServer(this.platformId)) {
       return this.initLangServer();
     } else {
