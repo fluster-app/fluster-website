@@ -1,3 +1,7 @@
+# [Regeln in der WG](/blog/post/wg-regeln)
+### [Eine einführung zu die wichtigsten Regeln einer Wohngemeinschaft](/blog/post/wg-regeln)
+Posted by [Jonas](mailto:info@fluster.io) on November 8, 2018
+
 # [Gemeinsame WG Aktivitäten #1](/blog/post/wg-uno)
 ### [Der grösste Klassiker](/blog/post/wg-uno)
 Posted by [Jonas](mailto:info@fluster.io) on October 24, 2018
