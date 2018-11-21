@@ -1,3 +1,7 @@
+# [Gemeinsame WG Aktivitäten #2](/blog/post/wg-arschloch-handkartenspiel)
+### [Der Klassiker unter jungen Menschen](/blog/post/wg-arschloch-handkartenspiel)
+Posted by [Jonas](mailto:info@fluster.io) on November 21, 2018
+
 # [Regeln in der WG](/blog/post/wg-regeln)
 ### [Eine einführung zu die wichtigsten Regeln einer Wohngemeinschaft](/blog/post/wg-regeln)
 Posted by [Jonas](mailto:info@fluster.io) on November 8, 2018
