@@ -1,3 +1,10 @@
+<a name="4.6.0"></a>
+# [4.6.0](https://github.com/fluster/fluster-website/compare/v4.5.1...v4.6.0) (2018-11-21)
+
+### Blog
+
+* publish a new blog post about another game for roommates ([0b785cf](https://github.com/fluster/fluster-website/commit/0b785cfa702d998020f7b2fc7ff5017b4dd4b606))
+
 <a name="4.5.1"></a>
 # [4.5.1](https://github.com/fluster/fluster-website/compare/v4.5.0...v4.5.1) (2018-11-08)
 
