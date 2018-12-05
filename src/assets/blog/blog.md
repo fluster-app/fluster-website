@@ -1,3 +1,7 @@
+# [Wohnungssuche](/blog/post/wohnungssuche)
+### [Wieso Fluster dir die Suche vereinfacht](/blog/post/wohnungssuche)
+Posted by [Jonas](mailto:info@fluster.io) on December 5, 2018
+
 # [Gemeinsame WG Aktivitäten #2](/blog/post/wg-arschloch-handkartenspiel)
 ### [Der Klassiker unter jungen Menschen](/blog/post/wg-arschloch-handkartenspiel)
 Posted by [Jonas](mailto:info@fluster.io) on November 21, 2018
