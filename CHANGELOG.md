@@ -1,3 +1,10 @@
+<a name="4.7.0"></a>
+# [4.7.0](https://github.com/fluster/fluster-website/compare/v4.6.0...v4.7.0) (2018-12-05)
+
+### Blog
+
+* publish a new blog post about why Fluster is coolio ([689b3fd](https://github.com/fluster/fluster-website/commit/689b3fdd8aa099365df6d51be21babcd7ed6489b))
+
 <a name="4.6.0"></a>
 # [4.6.0](https://github.com/fluster/fluster-website/compare/v4.5.1...v4.6.0) (2018-11-21)
 
