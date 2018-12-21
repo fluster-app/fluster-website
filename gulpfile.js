@@ -125,7 +125,7 @@ const replaceResources = ['./src/providers/core/utils/resources.ts', './src/inde
 ];
 
 gulp.task('resources', function () {
-  const resources = JSON.parse(fs.readFileSync('/Users/daviddalbusco/Documents/projects/ororomunroe/resources/resources.json'));
+  const resources = JSON.parse(fs.readFileSync('/Users/daviddalbusco/Documents/projects/fluster/ororomunroe/resources/resources.json'));
 
   replace({
     regex: "{{FACEBOOK_APP_ID}}",
