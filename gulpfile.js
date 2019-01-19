@@ -8,7 +8,7 @@ const del = require('del');
 
 const fs = require('fs');
 
-gulp.task('copy-assets', function () {
+gulp.task('copy-assets', function (done) {
   gulp.src('./src/assets/**/*')
     .pipe(gulp.dest('./dist/server/assets/'));
 
@@ -18,13 +18,17 @@ gulp.task('copy-assets', function () {
 
   gulp.src('./node_modules/cookieconsent/build/*')
     .pipe(gulp.dest('./dist/server/assets/cookieconsent/'));
+
+  done();
 });
 
-gulp.task('moment', function (cg) {
+gulp.task('moment', function (done) {
   del(['./node_modules/moment/locale/*', '!./node_modules/moment/locale/fr.js', '!./node_modules/moment/locale/de.js', '!./node_modules/moment/locale/it.js', '!./node_modules/moment/locale/en.js']);
+
+  done();
 });
 
-gulp.task('prod', function () {
+gulp.task('prod', function (done) {
   gulp.src('./src/index.html')
     .pipe(removeCode({prod: true}))
     .pipe(gulp.dest('./src/'));
@@ -68,9 +72,11 @@ gulp.task('prod', function () {
   gulp.src('./static/termsofuse_it.html')
     .pipe(removeCode({prod: true}))
     .pipe(gulp.dest('./static/'));
+
+  done();
 });
 
-gulp.task('staging', function () {
+gulp.task('staging', function (done) {
   gulp.src('./src/index.html')
     .pipe(removeCode({staging: true}))
     .pipe(gulp.dest('./src/'));
@@ -114,6 +120,8 @@ gulp.task('staging', function () {
   gulp.src('./static/termsofuse_it.html')
     .pipe(removeCode({staging: true}))
     .pipe(gulp.dest('./static/'));
+
+  done();
 });
 
 // Inject secret keys
@@ -124,7 +132,7 @@ const replaceResources = ['./src/providers/core/utils/resources.ts', './src/inde
   './static/termsofuse_de.html', './static/termsofuse_fr.html', './static/termsofuse_it.html', './static/termsofuse.html'
 ];
 
-gulp.task('resources', function () {
+gulp.task('resources', function (done) {
   const resources = JSON.parse(fs.readFileSync('/Users/daviddalbusco/Documents/projects/fluster/ororomunroe/resources/resources.json'));
 
   replace({
@@ -182,5 +190,7 @@ gulp.task('resources', function () {
     recursive: false,
     silent: false
   });
+
+  done();
 
 });
