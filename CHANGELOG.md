@@ -1,3 +1,10 @@
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/fluster/fluster-website/compare/v4.7.0...v5.0.0) (2019-01-19)
+
+### Libs
+
+* upgrade to Angular v7 ([#13](https://github.com/fluster/fluster-website/issues/13))
+
 <a name="4.7.0"></a>
 # [4.7.0](https://github.com/fluster/fluster-website/compare/v4.6.0...v4.7.0) (2018-12-05)
 
