@@ -1,5 +1,4 @@
 import 'zone.js/dist/zone-node';
-import 'reflect-metadata';
 import { enableProdMode } from '@angular/core';
 
 // Express Engine
@@ -26,17 +25,7 @@ const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./server/main');
 app.engine('html', ngExpressEngine({
   bootstrap: AppServerModuleNgFactory,
   providers: [
-    provideModuleMap(LAZY_MODULE_MAP),
-    // In case you want to use an AppShell with SSR and Lazy loading
-    // you'd need to uncomment the below. (see: https://github.com/angular/angular-cli/issues/9202)
-    // {
-    //   provide: NgModuleFactoryLoader,
-    //   useClass: ModuleMapNgFactoryLoader,
-    //   deps: [
-    //     Compiler,
-    //     MODULE_MAP
-    //   ],
-    // },
+    provideModuleMap(LAZY_MODULE_MAP)
   ]
 }));
 
