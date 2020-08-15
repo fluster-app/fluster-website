@@ -51,7 +51,7 @@
     "ngx-markdown": "^7.1.5",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.5.1",
-    "serialize-javascript": "^1.7.0",
+    "serialize-javascript": "^3.1.0",
     "underscore": "^1.9.1",
     "web-google-maps": "^1.0.1",
     "web-social-share": "^5.0.0",
